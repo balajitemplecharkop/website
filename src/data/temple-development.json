@@ -1,0 +1,37 @@
+{
+  "totalRaised": 665000,
+  "totalTarget": 1900000,
+  "estimatedCompletion": "2025-12-31",
+  "projects": [
+    {
+      "id": "flooring",
+      "title": "Main Sanctum Flooring",
+      "description": "Premium marble flooring installation for the main prayer hall.",
+      "progress": 75,
+      "raised": 350000,
+      "target": 500000,
+      "status": "75% Complete",
+      "statusColor": "bg-deep-saffron"
+    },
+    {
+      "id": "roof",
+      "title": "Roof Renovation",
+      "description": "Weather-resistant roofing to protect the temple structure.",
+      "progress": 40,
+      "raised": 240000,
+      "target": 600000,
+      "status": "40% Complete",
+      "statusColor": "bg-peacock-green"
+    },
+    {
+      "id": "mandap",
+      "title": "Community Mandap",
+      "description": "Covered pavilion for large gatherings and festivals.",
+      "progress": 15,
+      "raised": 75000,
+      "target": 800000,
+      "status": "Planning",
+      "statusColor": "bg-light-saffron text-deep-brown"
+    }
+  ]
+} 

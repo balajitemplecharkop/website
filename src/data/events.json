@@ -1,0 +1,56 @@
+[
+  {
+    "id": "makar-sankranti-2025",
+    "title": "Makar Sankranti",
+    "description": "Special Khichdi Prasadam",
+    "date": "2025-01-14",
+    "time": "10:00 AM - 2:00 PM",
+    "type": "festival",
+    "details": "Celebrate the harvest festival with special prayers to Lord Surya and distribution of sacred khichdi prasadam to all devotees."
+  },
+  {
+    "id": "republic-day-2025",
+    "title": "Republic Day Celebrations",
+    "description": "Flag hoisting & cultural program",
+    "date": "2025-01-26",
+    "time": "8:00 AM - 11:00 AM",
+    "type": "national",
+    "details": "Patriotic celebration with flag hoisting ceremony followed by cultural performances by temple community members."
+  },
+  {
+    "id": "vasant-panchami-2025",
+    "title": "Vasant Panchami",
+    "description": "Saraswati Pooja",
+    "date": "2025-02-02",
+    "time": "9:00 AM - 12:00 PM",
+    "type": "festival",
+    "details": "Welcome spring with Goddess Saraswati worship. Special prayers for students and blessing of books and musical instruments."
+  },
+  {
+    "id": "maha-shivaratri-2025",
+    "title": "Maha Shivaratri",
+    "description": "Night-long prayers and abhishek",
+    "date": "2025-02-26",
+    "time": "6:00 PM - 6:00 AM",
+    "type": "festival",
+    "details": "Grand celebration of Lord Shiva with continuous abhishek, bhajans, and meditation throughout the night."
+  },
+  {
+    "id": "holi-2025",
+    "title": "Holi Celebration",
+    "description": "Festival of colors with community gathering",
+    "date": "2025-03-14",
+    "time": "4:00 PM - 8:00 PM",
+    "type": "festival",
+    "details": "Celebrate the victory of good over evil with colors, music, dance, and special Krishna bhajans."
+  },
+  {
+    "id": "ram-navami-2025",
+    "title": "Ram Navami",
+    "description": "Lord Rama's birth celebration",
+    "date": "2025-04-06",
+    "time": "6:00 AM - 12:00 PM",
+    "type": "festival",
+    "details": "Celebrate Lord Rama's birth with special prayers, Ramayana recitation, and community feast."
+  }
+]

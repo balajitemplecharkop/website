@@ -1,0 +1,114 @@
+[
+  {
+    "id": "gayatri",
+    "name": "Gayatri Mantra",
+    "sanskrit": "ॐ भूर्भुवः स्वः\nतत्सवितुर्वरेण्यं\nभर्गो देवस्य धीमहि\nधियो यो नः प्रचोदयात्",
+    "transliteration": "Om Bhur Bhuvaḥ Swaḥ\nTat-savitur Vareñyaṃ\nBhargo Devasya Dhīmahi\nDhiyo Yo Naḥ Prachodayāt",
+    "meaning": "We meditate on the divine light of the Sun, the source of all life and consciousness. May this divine light illuminate our minds and guide our thoughts toward truth and righteousness. We seek the blessings of the divine to awaken our inner wisdom and lead us from darkness to light.",
+    "deity": "Lord Surya",
+    "benefits": [
+      "Enhances spiritual consciousness",
+      "Provides divine protection",
+      "Increases wisdom and knowledge",
+      "Purifies mind and soul"
+    ]
+  },
+  {
+    "id": "mahamrityunjaya",
+    "name": "Maha Mrityunjaya Mantra",
+    "sanskrit": "ॐ त्र्यम्बकं यजामहे\nसुगन्धिं पुष्टिवर्धनम्\nउर्वारुकमिव बन्धनान्\nमृत्योर्मुक्षीय मामृतात्",
+    "transliteration": "Om Tryambakam Yajamahe\nSugandhim Pushtivardhanam\nUrvarukamiva Bandhanan\nMrityor Mukshiya Mamritat",
+    "meaning": "We worship the three-eyed Lord Shiva who is the destroyer of death and the giver of immortality. Just as a cucumber is freed from its bondage to the vine when ripe, may we be freed from the cycle of death and attain immortality.",
+    "deity": "Lord Shiva",
+    "benefits": [
+      "Provides protection from death",
+      "Promotes healing and health",
+      "Removes fear and anxiety",
+      "Grants spiritual liberation"
+    ]
+  },
+  {
+    "id": "ganesha",
+    "name": "Ganesha Mantra",
+    "sanskrit": "ॐ गं गणपतये नमः",
+    "transliteration": "Om Gam Ganapataye Namah",
+    "meaning": "I bow to Lord Ganesha, the remover of obstacles and the lord of beginnings. May all obstacles be removed from my path and may I be blessed with wisdom and success in all endeavors.",
+    "deity": "Lord Ganesha",
+    "benefits": [
+      "Removes obstacles from life",
+      "Brings success in new ventures",
+      "Enhances wisdom and intelligence",
+      "Provides divine blessings"
+    ]
+  },
+  {
+    "id": "krishna",
+    "name": "Krishna Mantra",
+    "sanskrit": "ॐ नमो भगवते वासुदेवाय",
+    "transliteration": "Om Namo Bhagavate Vasudevaya",
+    "meaning": "I bow to the divine Lord Krishna, the son of Vasudeva. This sacred mantra invokes the presence of the Supreme Being who is the embodiment of love, compassion, and divine consciousness.",
+    "deity": "Lord Krishna",
+    "benefits": [
+      "Brings love and devotion",
+      "Provides spiritual joy and bliss",
+      "Removes suffering and sorrow",
+      "Enhances divine consciousness"
+    ]
+  },
+  {
+    "id": "durga",
+    "name": "Durga Mantra",
+    "sanskrit": "ॐ दुं दुर्गायै नमः",
+    "transliteration": "Om Dum Durgayai Namah",
+    "meaning": "I bow to Goddess Durga, the invincible divine mother who protects her devotees from all evil forces. She is the embodiment of divine feminine power and the destroyer of negativity.",
+    "deity": "Goddess Durga",
+    "benefits": [
+      "Provides protection from evil",
+      "Removes negative energies",
+      "Enhances courage and strength",
+      "Brings victory over obstacles"
+    ]
+  },
+  {
+    "id": "lakshmi",
+    "name": "Lakshmi Mantra",
+    "sanskrit": "ॐ श्रीं श्रीयै नमः",
+    "transliteration": "Om Shreem Shriyai Namah",
+    "meaning": "I bow to Goddess Lakshmi, the divine mother of wealth and prosperity. She is the source of all abundance, material and spiritual, and blesses her devotees with fortune and well-being.",
+    "deity": "Goddess Lakshmi",
+    "benefits": [
+      "Attracts wealth and prosperity",
+      "Brings financial abundance",
+      "Enhances business success",
+      "Provides material comforts"
+    ]
+  },
+  {
+    "id": "saraswati",
+    "name": "Saraswati Mantra",
+    "sanskrit": "ॐ ऐं सरस्वत्यै नमः",
+    "transliteration": "Om Aim Saraswatyai Namah",
+    "meaning": "I bow to Goddess Saraswati, the divine mother of knowledge, arts, and wisdom. She is the source of all learning and creativity, blessing her devotees with intelligence and artistic abilities.",
+    "deity": "Goddess Saraswati",
+    "benefits": [
+      "Enhances knowledge and learning",
+      "Improves artistic abilities",
+      "Increases wisdom and intelligence",
+      "Brings academic success"
+    ]
+  },
+  {
+    "id": "hanuman",
+    "name": "Hanuman Mantra",
+    "sanskrit": "ॐ हं हनुमते नमः",
+    "transliteration": "Om Ham Hanumate Namah",
+    "meaning": "I bow to Lord Hanuman, the mighty devotee of Lord Rama. He is the embodiment of strength, courage, and unwavering devotion, protecting his devotees from all dangers and difficulties.",
+    "deity": "Lord Hanuman",
+    "benefits": [
+      "Increases physical and mental strength",
+      "Provides protection from negative forces",
+      "Enhances courage and confidence",
+      "Removes fear and anxiety"
+    ]
+  }
+]

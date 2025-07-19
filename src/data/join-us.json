@@ -1,0 +1,30 @@
+{
+  "volunteerRoles": [
+    {
+      "id": "event-volunteer",
+      "title": "Event Volunteer",
+      "description": "Help organize and manage temple events, festivals, and community programs.",
+      "skills": ["Organization", "Teamwork", "Communication"]
+    },
+    {
+      "id": "teaching-volunteer",
+      "title": "Teaching Volunteer",
+      "description": "Conduct classes or workshops for children and adults (music, art, language, etc.).",
+      "skills": ["Teaching", "Creativity", "Patience"]
+    }
+  ],
+  "jobPostings": [
+    {
+      "id": "admin-assistant",
+      "title": "Administrative Assistant",
+      "description": "Assist with daily temple administration, record keeping, and communication.",
+      "requirements": ["Basic computer skills", "Fluent in English/Hindi/Marathi"]
+    },
+    {
+      "id": "social-media-manager",
+      "title": "Social Media Manager",
+      "description": "Manage temple's social media presence, create posts, and engage with the community online.",
+      "requirements": ["Experience with social media", "Content creation skills"]
+    }
+  ]
+} 

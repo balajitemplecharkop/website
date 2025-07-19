@@ -1,0 +1,165 @@
+/*
+  Custom CSS for Balaji Mandir Charkop
+  - All classes below are used throughout the app (see Navbar, Home, PoojaCard, etc.)
+  - When adding new custom CSS, keep it minimal and scoped to components/pages if possible.
+  - Tailwind handles most utility classes and purges unused styles in production.
+*/
+
+/* Self-hosted Inter font */
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Spiritual Theme Colors */
+  --background: hsl(40, 50%, 96%); /* Soft Beige #F9F5EC */
+  --foreground: hsl(15, 24%, 24%); /* Deep Brown #3B2F2F */
+  --muted: hsl(45, 60%, 95%);
+  --muted-foreground: hsl(15, 18%, 50%);
+  --popover: hsl(40, 50%, 98%);
+  --popover-foreground: hsl(15, 24%, 24%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(15, 24%, 24%);
+  --border: hsl(40, 40%, 85%);
+  --input: hsl(40, 40%, 85%);
+  
+  /* Spiritual Accent Colors */
+  --primary: hsl(25, 80%, 60%); /* Deep Saffron #E57C23 */
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(40, 75%, 80%); /* Light Saffron #FCD9A0 */
+  --secondary-foreground: hsl(15, 24%, 24%);
+  --accent: hsl(174, 100%, 24%); /* Peacock Green #00796B */
+  --accent-foreground: hsl(0, 0%, 100%);
+  
+  /* Status Colors */
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(15, 24%, 24%);
+  --radius: 0.75rem;
+  
+  /* Custom Spiritual Colors */
+  --spiritual-beige: hsl(40, 50%, 96%);
+  --light-saffron: hsl(40, 75%, 80%);
+  --deep-saffron: hsl(25, 80%, 60%);
+  --peacock-green: hsl(174, 100%, 24%);
+  --deep-brown: hsl(15, 24%, 24%);
+  --cream: hsl(45, 100%, 97%);
+  --light-green: hsl(120, 30%, 90%);
+}
+
+.dark {
+  --background: hsl(15, 20%, 8%);
+  --foreground: hsl(0, 0%, 95%);
+  --muted: hsl(15, 15%, 15%);
+  --muted-foreground: hsl(15, 10%, 60%);
+  --popover: hsl(15, 20%, 8%);
+  --popover-foreground: hsl(0, 0%, 95%);
+  --card: hsl(15, 20%, 10%);
+  --card-foreground: hsl(0, 0%, 95%);
+  --border: hsl(15, 15%, 20%);
+  --input: hsl(15, 15%, 20%);
+  --primary: hsl(25, 80%, 60%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(15, 15%, 20%);
+  --secondary-foreground: hsl(0, 0%, 95%);
+  --accent: hsl(174, 100%, 24%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 75%, 55%);
+  --destructive-foreground: hsl(0, 0%, 95%);
+  --ring: hsl(15, 15%, 70%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased;
+    background-color: var(--spiritual-beige);
+    color: var(--deep-brown);
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .navbar-blur {
+    backdrop-filter: blur(12px);
+    background: hsla(40, 50%, 96%, 0.95);
+  }
+  
+  .shadow-spiritual {
+    box-shadow: 0 4px 20px rgba(59, 47, 47, 0.1);
+  }
+  
+  .shadow-spiritual-hover {
+    box-shadow: 0 8px 30px rgba(59, 47, 47, 0.15);
+  }
+  
+  .transition-spiritual {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .bg-spiritual-beige {
+    background-color: var(--spiritual-beige);
+  }
+  
+  .bg-light-saffron {
+    background-color: var(--light-saffron);
+  }
+  
+  .bg-deep-saffron {
+    background-color: var(--deep-saffron);
+  }
+  
+  .bg-peacock-green {
+    background-color: var(--peacock-green);
+  }
+  
+  .bg-deep-brown {
+    background-color: var(--deep-brown);
+  }
+  
+  .bg-cream {
+    background-color: var(--cream);
+  }
+  
+  .bg-light-green {
+    background-color: var(--light-green);
+  }
+  
+  .text-deep-brown {
+    color: var(--deep-brown);
+  }
+  
+  .text-deep-saffron {
+    color: var(--deep-saffron);
+  }
+  
+  .text-peacock-green {
+    color: var(--peacock-green);
+  }
+  
+  .border-light-saffron {
+    border-color: var(--light-saffron);
+  }
+  
+  .border-peacock-green {
+    border-color: var(--peacock-green);
+  }
+}

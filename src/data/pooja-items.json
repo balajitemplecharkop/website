@@ -1,0 +1,347 @@
+[
+  {
+    "id": "swayamvara-pooja",
+    "name": "Swayamvara Pooja",
+    "price": 11,
+    "description": "Special prayers for finding the right life partner",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "45 MIN",
+    "benefits": ["Finding suitable partner", "Marital harmony", "Divine blessings"],
+    "special": "FREE"
+  },
+  {
+    "id": "annadanam",
+    "name": "Annadanam",
+    "price": 251,
+    "description": "Sacred food offering and distribution to devotees",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "Daily Service",
+    "benefits": ["Feeding the hungry", "Spiritual merit", "Community service"]
+  },
+  {
+    "id": "venkateshwara-archana",
+    "name": "Shree Venkateshwara Archana",
+    "price": 51,
+    "description": "Sacred name chanting and offering to Lord Venkateshwara",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Venkateshwara",
+    "duration": "30 MIN",
+    "benefits": ["Divine blessings", "Prosperity", "Spiritual growth"]
+  },
+  {
+    "id": "padmavati-archana",
+    "name": "Padmavati Archana",
+    "price": 51,
+    "description": "Sacred worship of Goddess Padmavati",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Goddess Padmavati",
+    "duration": "30 MIN",
+    "benefits": ["Wealth and prosperity", "Family welfare", "Divine grace"]
+  },
+  {
+    "id": "garuda-seva",
+    "name": "Garuda Seva",
+    "price": 51,
+    "description": "Special seva invoking Lord Garuda",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Garuda",
+    "duration": "25 MIN",
+    "benefits": ["Protection", "Swift solutions", "Divine intervention"]
+  },
+  {
+    "id": "special-archana-balaji-padmavati",
+    "name": "Special Archana - Balaji & Padmavati",
+    "price": 101,
+    "description": "Combined special worship of Lord Balaji and Goddess Padmavati",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji & Padmavati",
+    "duration": "45 MIN",
+    "benefits": ["Complete blessings", "Prosperity and peace", "Divine couple's grace"]
+  },
+  {
+    "id": "oil-offering",
+    "name": "One Time Oil Offering",
+    "price": 501,
+    "description": "Sacred oil offering for divine illumination",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "15 MIN",
+    "benefits": ["Divine light", "Spiritual illumination", "Prosperity"]
+  },
+  {
+    "id": "namakaranam",
+    "name": "Namakaranam",
+    "price": 501,
+    "description": "Sacred naming ceremony for newborn children",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "60 MIN",
+    "benefits": ["Auspicious naming", "Child's wellbeing", "Divine protection"]
+  },
+  {
+    "id": "ekanta-seva",
+    "name": "Ekanta Seva Yajamaan",
+    "price": 501,
+    "description": "Private worship session with the deity",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "30 MIN",
+    "benefits": ["Personal divine connection", "Exclusive blessings", "Spiritual intimacy"]
+  },
+  {
+    "id": "tulasi-mala",
+    "name": "Tulasi Mala",
+    "price": 901,
+    "description": "Sacred Tulasi garland offering to the deity",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "20 MIN",
+    "benefits": ["Devotional offering", "Spiritual purification", "Divine fragrance"]
+  },
+  {
+    "id": "suprabhata-seva",
+    "name": "Suprabhata Seva (6:00 AM to 6:30 AM)",
+    "price": 1001,
+    "description": "Early morning awakening seva for the deity",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "30 MIN",
+    "benefits": ["Divine awakening", "Auspicious start", "Morning blessings"]
+  },
+  {
+    "id": "flowers-utsavar",
+    "name": "Flowers for the Utsavar",
+    "price": 1001,
+    "description": "Fresh flower decoration for the processional deity",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Utsavar",
+    "duration": "Daily decoration",
+    "benefits": ["Divine beauty", "Aromatic blessings", "Visual devotion"]
+  },
+  {
+    "id": "vahan-pooja-2wheeler",
+    "name": "Vahan Pooja (2 Wheeler)",
+    "price": 1001,
+    "description": "Vehicle blessing ceremony for two-wheelers",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "45 MIN",
+    "benefits": ["Safe travels", "Vehicle protection", "Journey blessings"]
+  },
+  {
+    "id": "bhajan-yajamaan",
+    "name": "Bhajan Yajamaan (7:00 PM to 8:00 PM)",
+    "price": 1001,
+    "description": "Evening devotional singing session sponsor",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "60 MIN",
+    "benefits": ["Devotional music", "Community participation", "Divine melody"]
+  },
+  {
+    "id": "venkateshwara-sahasranama",
+    "name": "Venkateshwara Sahasranama Archana",
+    "price": 1001,
+    "description": "Chanting of 1000 names of Lord Venkateshwara",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Venkateshwara",
+    "duration": "90 MIN",
+    "benefits": ["Divine names power", "Spiritual merit", "Complete blessings"]
+  },
+  {
+    "id": "mahalaxmi-sahasranama",
+    "name": "Maha Laxmi Sahasranama Archana",
+    "price": 1001,
+    "description": "Chanting of 1000 names of Goddess Lakshmi",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Goddess Lakshmi",
+    "duration": "90 MIN",
+    "benefits": ["Wealth and prosperity", "Divine grace", "Material abundance"]
+  },
+  {
+    "id": "tiruppavada-seva",
+    "name": "Tiruppavada Seva",
+    "price": 1001,
+    "description": "Sacred silk cloth offering to the deity",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "30 MIN",
+    "benefits": ["Divine adornment", "Sacred clothing", "Royal treatment"]
+  },
+  {
+    "id": "abhishekam-utsavar-friday",
+    "name": "Abhishekam for Utsavar (Friday)",
+    "price": 1001,
+    "description": "Special Friday abhishekam for the processional deity",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Utsavar",
+    "duration": "60 MIN",
+    "benefits": ["Divine bathing", "Purification", "Friday blessings"]
+  },
+  {
+    "id": "srivari-seva",
+    "name": "Srivari Seva (Cleaning of Temple)",
+    "price": 1201,
+    "description": "Sacred service of temple cleaning and maintenance",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "Service",
+    "benefits": ["Seva merit", "Temple sanctity", "Divine service"]
+  },
+  {
+    "id": "hair-offering",
+    "name": "Hair Offering (Mundan)",
+    "price": 1501,
+    "description": "Sacred hair offering ceremony",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "45 MIN",
+    "benefits": ["Devotional sacrifice", "Spiritual purification", "Divine surrender"]
+  },
+  {
+    "id": "kalyana-mala",
+    "name": "Garland for Lord Balaji (Kalyana Mala)",
+    "price": 2001,
+    "description": "Special wedding garland for Lord Balaji",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "30 MIN",
+    "benefits": ["Divine marriage blessings", "Marital harmony", "Sacred union"]
+  },
+  {
+    "id": "vahan-pooja-4wheeler",
+    "name": "Vahan Pooja (4 Wheeler)",
+    "price": 2001,
+    "description": "Vehicle blessing ceremony for four-wheelers",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "60 MIN",
+    "benefits": ["Safe travels", "Vehicle protection", "Journey blessings"]
+  },
+  {
+    "id": "annaprasanam",
+    "name": "Annaprasanam",
+    "price": 2501,
+    "description": "First food ceremony for babies",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+      "duration": "75 MIN",
+    "benefits": ["Child's health", "Proper growth", "Divine nourishment"]
+  },
+  {
+    "id": "abhishekam-balaji",
+    "name": "Abhishekam for Lord Balaji",
+    "price": 3001,
+    "description": "Sacred bathing ceremony for Lord Balaji",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "90 MIN",
+    "benefits": ["Divine purification", "Complete blessings", "Spiritual cleansing"]
+  },
+  {
+    "id": "prasadam",
+    "name": "Prasadam",
+    "price": 3001,
+    "description": "Sacred food offering distribution",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "Distribution",
+    "benefits": ["Divine grace", "Blessed food", "Spiritual nourishment"]
+  },
+  {
+    "id": "santana-gopala",
+    "name": "Santana Gopala Krishna (Pooja & Havan)",
+    "price": 5001,
+    "description": "Special pooja and fire ceremony for child blessings",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Santana Gopala Krishna",
+    "duration": "120 MIN",
+    "benefits": ["Child blessings", "Fertility", "Progeny protection"]
+  },
+  {
+    "id": "saturday-annadanam",
+    "name": "Saturday Annadanam",
+    "price": 5001,
+    "description": "Special Saturday food distribution service",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "Full day service",
+    "benefits": ["Mass feeding", "Community service", "Spiritual merit"]
+  },
+  {
+    "id": "balabhojanam",
+    "name": "Balabhojanam (Amavasya)",
+    "price": 5001,
+    "description": "Children's feast on new moon day",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "Special day service",
+    "benefits": ["Children's welfare", "Community bonding", "Divine blessings"]
+  },
+  {
+    "id": "bramhanbhojan",
+    "name": "Bramhanbhojan (Amavasya)",
+    "price": 5001,
+    "description": "Feeding of Brahmins on new moon day",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=2000",
+    "deity": "Lord Balaji",
+    "duration": "Special day service",
+    "benefits": ["Brahmin blessings", "Spiritual merit", "Ancestral peace"]
+  },
+  {
+    "id": "special-annadanam-memory",
+    "name": "Special Annadanam (In Memory Of)",
+    "price": 11001,
+    "description": "Memorial food distribution in memory of departed souls",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "Memorial service",
+    "benefits": ["Soul peace", "Memorial service", "Ancestral blessings"]
+  },
+  {
+    "id": "tulabharam",
+    "name": "Tulabharam",
+    "price": 11,
+    "description": "Offering equivalent to body weight in sacred materials",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "As required",
+    "benefits": ["Complete surrender", "Proportional offering", "Divine weighing"],
+    "special": "As per weight"
+  },
+  {
+    "id": "pooja-samagri",
+    "name": "Pooja Samagri",
+    "price": 1001,
+    "description": "Sacred materials and items for worship",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "As required",
+    "benefits": ["Worship materials", "Sacred offerings", "Divine tools"],
+    "special": "As per wish"
+  },
+  {
+    "id": "nithya-seva",
+    "name": "Nithya Seva",
+    "price": 11,
+    "description": "Daily ongoing service to the deity",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji",
+    "duration": "Daily service",
+    "benefits": ["Continuous blessings", "Daily devotion", "Ongoing seva"],
+    "special": "As per wish"
+  },
+  {
+    "id": "kalyana-utsavam",
+    "name": "Kalyana Utsavam",
+    "price": 11,
+    "description": "Divine marriage ceremony of the deities",
+    "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
+    "deity": "Lord Balaji & Padmavati",
+    "duration": "Grand celebration",
+    "benefits": ["Divine marriage blessings", "Marital harmony", "Grand celebration"],
+    "special": "As per wish"
+  }
+]

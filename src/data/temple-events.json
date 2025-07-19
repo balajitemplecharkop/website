@@ -1,0 +1,182 @@
+[
+  {
+    "id": "jagannath-rath-yatra-2025",
+    "title": "Jagannath Rath Yatra",
+    "date": "2025-06-26",
+    "description": "Nine‑day chariot festival of Lord Jagannath–procession from Jagannath Temple to Gundicha Temple in Puri.",
+    "time": "Morning ritual onward",
+    "location": "Puri and ISKCON centers",
+    "color": "#00796B"
+  },
+  {
+    "id": "guru-purnima-2025",
+    "title": "Guru Purnima",
+    "date": "2025-07-10",
+    "description": "Day to honor and worship spiritual teachers–puja, satsang and gurus’ blessings.",
+    "time": "Morning to afternoon",
+    "location": "Ashram/Temple",
+    "color": "#00796B"
+  },
+  {
+    "id": "kamika-ekadashi-2025",
+    "title": "Kamika Ekadashi",
+    "date": "2025-07-21",
+    "description": "Ekadashi fast dedicated to Lord Vishnu; rituals, bhajans, and parana.",
+    "time": "Sunset to next sunrise",
+    "location": "Home/Temple",
+    "color": "#00796B"
+  },
+  {
+    "id": "sawan-shivratri-2025",
+    "title": "Sawan Shivratri",
+    "date": "2025-07-23",
+    "description": "Monthly Shivratri: night‑long vigil, jalabhishek, chanting Shiva mantras.",
+    "time": "Evening till late night",
+    "location": "Shiva Temple",
+    "color": "#00796B"
+  },
+  {
+    "id": "hariyali-teej-2025",
+    "title": "Hariyali Teej",
+    "date": "2025-07-27",
+    "description": "Festival celebrating greenery and marital harmony with mehendi, swings, fasts.",
+    "time": "Daytime",
+    "location": "Home/Temple",
+    "color": "#00796B"
+  },
+  {
+    "id": "nag-panchami-2025",
+    "title": "Nag Panchami",
+    "date": "2025-07-29",
+    "description": "Worship of serpents—offering milk and prayers to snake idols or live snakes.",
+    "time": "Daytime",
+    "location": "Snake temple/local deity spot",
+    "color": "#00796B"
+  },
+  {
+    "id": "raksha-bandhan-2025",
+    "title": "Raksha Bandhan",
+    "date": "2025-08-09",
+    "description": "Sister ties sacred thread on brother’s wrist; blessings and gifts exchanged.",
+    "time": "Daytime",
+    "location": "Home",
+    "color": "#00796B"
+  },
+  {
+    "id": "krishna-janmashtami-2025",
+    "title": "Krishna Janmashtami",
+    "date": "2025-08-16",
+    "description": "Midnight abhishekam of Krishna idol, devotional songs and drama enactments.",
+    "time": "11:00 PM – 1:00 AM",
+    "location": "Temple/Home shrine",
+    "color": "#00796B"
+  },
+  {
+    "id": "ganesh-chaturthi-2025",
+    "title": "Ganesh Chaturthi",
+    "date": "2025-08-27",
+    "description": "Installation of Ganesha idols, daily aarti, culminating in visarjan on Anant Chaturdashi.",
+    "time": "Daytime to immersion",
+    "location": "Pandal/Home",
+    "color": "#00796B"
+  },
+  {
+    "id": "pitru-paksha-2025",
+    "title": "Pitru Paksha",
+    "date": "2025-09-07 to 2025-09-21",
+    "description": "15‑day Shradh rituals—Tarpan, Pind Daan in memory of ancestors.",
+    "time": "Daytime",
+    "location": "Home/Ancestral ghats",
+    "color": "#00796B"
+  },
+  {
+    "id": "durga-navratri-2025",
+    "title": "Durga Navratri",
+    "date": "2025-10-03 to 2025-10-11",
+    "description": "Nine‑day worship of Goddess Durga; fasting, nightly kirtans and vigils.",
+    "time": "Evening – Nightly",
+    "location": "Temple/Home",
+    "color": "#00796B"
+  },
+  {
+    "id": "dussehra-2025",
+    "title": "Dussehra",
+    "date": "2025-10-11",
+    "description": "Victory of good over evil; Ram Lila, burning of Ravana effigies.",
+    "time": "Evening",
+    "location": "Grounds/Open-air stage",
+    "color": "#00796B"
+  },
+  {
+    "id": "diwali-2025",
+    "title": "Diwali",
+    "date": "2025-10-21",
+    "description": "Festival of Lights—Lakshmi Puja, fireworks, family feasts and gift‑giving.",
+    "time": "Evening",
+    "location": "Home",
+    "color": "#00796B"
+  },
+  {
+    "id": "makar-sankranti-2026",
+    "title": "Makar Sankranti",
+    "date": "2026-01-14",
+    "description": "Harvest and sun festival—kite flying, bonfires, holy dip in rivers.",
+    "time": "Daytime",
+    "location": "Outdoors/Temple",
+    "color": "#00796B"
+  },
+  {
+    "id": "vasant-panchami-2026",
+    "title": "Vasant Panchami",
+    "date": "2026-01-23",
+    "description": "Worship of Saraswati—yellow clothes, flowers, starting education and music.",
+    "time": "Daytime",
+    "location": "Home/School/Temple",
+    "color": "#00796B"
+  },
+  {
+    "id": "vaikuntha-ekadasi-2025",
+    "title": "Vaikuntha Ekadasi",
+    "date": "2025-01-09",
+    "description": "One of the most important Ekadashi observances; “Vaikuntha Dwara Darshan” opens at Tirumala.",
+    "time": "Temple hours",
+    "location": "Tirumala Venkateswara Temple",
+    "color": "#E57C23"
+  },
+  {
+    "id": "ratha-saptami-2025",
+    "title": "Ratha Saptami",
+    "date": "2025-02-17",
+    "description": "Minor Brahmotsavam at Tirumala with Vahanam procession of Malayappa Swamy and consorts on multiple vahanas.",
+    "time": "Daytime",
+    "location": "Tirumala",
+    "color": "#E57C23"
+  },
+  {
+    "id": "tirumala-teppotsavam-2025",
+    "title": "Srivari Teppotsavam (Float Festival)",
+    "date": "2025-03-09 to 2025-03-13",
+    "description": "Annual float festival in the temple tank – deities taken on decorated floats.",
+    "time": "Evening in Pushkarini",
+    "location": "Tirumala Pushkarini",
+    "color": "#E57C23"
+  },
+  {
+    "id": "srivari-brahmotsavam-2025-salakatla",
+    "title": "Srivari Brahmotsavam (Salakatla)",
+    "date": "2025-09-24 to 2025-10-02",
+    "description": "Nine-day grand celebration at Tirumala with Dwajarohanam, daily Vahanam processions including Garuda Seva and chariot festival.",
+    "time": "Morning & evening processions",
+    "location": "Tirumala",
+    "color": "#E57C23"
+  },
+  {
+    "id": "tirumala-purattasi-saturdays-2025",
+    "title": "Purattasi Shanivaralu (Saturdays)",
+    "date": "2025-09-20 to 2025-10-18",
+    "description": "Saturdays in the Tamil month of Purattasi—special prayers and offerings to Lord Venkateswara.",
+    "time": "All day Saturday",
+    "location": "Tirumala Temple",
+    "color": "#E57C23"
+  }
+]
