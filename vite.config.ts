@@ -25,10 +25,10 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
-    https: {
+    https: process.env.NODE_ENV !== 'production' ? {
       key: fs.readFileSync(path.resolve(__dirname, '.cert/key.pem')),
       cert: fs.readFileSync(path.resolve(__dirname, '.cert/cert.pem')),
-    },
+    } : undefined,
     fs: {
       strict: true,
       deny: ["**/.*"],
