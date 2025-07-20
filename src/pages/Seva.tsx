@@ -1,4 +1,5 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import PoojaCard from "@/components/PoojaCard";
 import poojaItems from "@/data/pooja-items.json";
@@ -26,9 +27,19 @@ export default function Seva() {
     return items;
   }, [search, sort]);
 
-  const loadMore = () => {
-    setDisplayedItems((prev) => Math.min(prev + 8, filteredAndSortedItems.length));
-  };
+  // Infinite scroll effect, optimized for mobile (no spinner, loads earlier)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 600 &&
+        displayedItems < filteredAndSortedItems.length
+      ) {
+        setDisplayedItems((prev) => Math.min(prev + 8, filteredAndSortedItems.length));
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [displayedItems, filteredAndSortedItems.length]);
 
   return (
     <>
@@ -38,7 +49,7 @@ export default function Seva() {
         <meta property="og:title" content="Temple Seva - Balaji Mandir Charkop" />
         <meta property="og:description" content="Participate in sacred rituals and poojas at Balaji Mandir Charkop. Choose from a variety of spiritual services and receive divine blessings." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://balajimandircharkop.com/seva" />
+        <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/seva" />
       </Helmet>
       <div className="pt-16">
         <section className="py-16 bg-spiritual-beige">
@@ -86,23 +97,18 @@ export default function Seva() {
             <div className="bg-white/80 rounded-2xl shadow-spiritual p-4 md:p-8">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {filteredAndSortedItems.slice(0, displayedItems).map((pooja, idx) => (
-                  <div key={pooja.id} className="animate-fade-in-up" style={{ animationDelay: `${idx * 40}ms` }}>
+                  <motion.div
+                    key={pooja.id}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: idx * 0.05 }}
+                  >
                     <PoojaCard pooja={{ ...pooja, price: Number(pooja.price) }} />
-                  </div>
+                  </motion.div>
                 ))}
               </div>
 
-              {displayedItems < filteredAndSortedItems.length && (
-                <div className="text-center mt-12">
-                  <Button
-                    onClick={loadMore}
-                    className="bg-deep-saffron hover:bg-deep-saffron/90 text-white px-8 py-3 rounded-xl font-semibold shadow-spiritual flex items-center justify-center gap-2"
-                  >
-                    <span>View More Seva Options</span>
-                    <span className="text-xs bg-white/20 rounded px-2 py-1">{filteredAndSortedItems.length - displayedItems} left</span>
-                  </Button>
-                </div>
-              )}
+              {/* Infinite scroll: No more View More button */}
               {filteredAndSortedItems.length === 0 && (
                 <div className="text-center text-deep-brown/70 mt-8 flex flex-col items-center">
                   <span className="text-4xl mb-2">🙏</span>

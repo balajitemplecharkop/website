@@ -53,7 +53,7 @@ export const imageLinks = {
   annadanamFoodDistribution: "https://images.unsplash.com/photo-1596797038530-2c107229654b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
 
   // Guruji page
-  gurujiPortrait: "https://balajimandircharkop.com/wp-content/uploads/2024/07/Bhajan-Yajamaan.webp" ,
+  gurujiPortrait: "https://tirupatibalajitemplecharkop.com/wp-content/uploads/2024/07/Bhajan-Yajamaan.webp" ,
 
   // Temple Development page
   templeDevelopment: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",

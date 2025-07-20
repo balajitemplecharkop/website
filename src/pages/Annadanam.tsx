@@ -5,6 +5,8 @@ import { annadanamGoal } from "@/data/annadanamGoal";
 import sevaTestimonials from "@/data/seva-testimonials.json";
 import { Helmet } from 'react-helmet-async';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import FaqAccordion from "@/components/FaqAccordion";
 
 export default function Annadanam() {
   const [openFaqIndexes, setOpenFaqIndexes] = useState<{ [key: number]: boolean }>({});
@@ -34,21 +36,21 @@ export default function Annadanam() {
         <meta property="og:title" content="Annadanam - Balaji Mandir Charkop" />
         <meta property="og:description" content="Support daily Annadanam at Balaji Mandir Charkop. Join our sacred food distribution program and serve the community." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://balajimandircharkop.com/annadanam" />
+        <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/annadanam" />
         <meta property="og:image" content="https://images.unsplash.com/photo-1596797038530-2c107229654b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" />
       </Helmet>
       <div className="pt-16">
         <section className="py-16 bg-spiritual-beige min-h-[80vh]">
           <div className="max-w-full px-2 sm:px-6 lg:px-8">
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-5xl mx-auto px-2 sm:px-4 lg:px-0">
               {/* Main Card - Responsive Two Column Grid */}
-              <div className="bg-white rounded-2xl shadow-spiritual mb-14 overflow-hidden grid grid-cols-1 lg:grid-cols-2 animate-fade-in-up">
+              <div className="bg-white rounded-2xl shadow-spiritual mb-14 overflow-hidden animate-fade-in-up flex flex-col lg:flex-row">
                 {/* Image */}
-                <div className="bg-cream flex items-center justify-center p-0 lg:p-8 min-h-[320px]">
+                <div className="bg-cream flex-shrink-0 w-full lg:w-1/2 h-56 sm:h-72 lg:h-auto lg:min-h-[320px]">
                   <img
                     src="/images/Yf8TILpvKPd6ZUye.webp"
                     alt="Annadanam food distribution at Balaji Mandir Charkop - main gallery image"
-                    className="w-full h-64 lg:h-[400px] object-cover rounded-2xl lg:rounded-2xl shadow-lg"
+                    className="w-full h-full object-cover rounded-none lg:rounded-none"
                     loading="eager"
                     fetchPriority="high"
                     width="800"
@@ -56,62 +58,59 @@ export default function Annadanam() {
                   />
                 </div>
                 {/* Details */}
-                <div className="flex flex-col justify-center p-6 lg:p-10 min-h-[320px]">
-                  <h1 className="text-3xl font-bold text-deep-brown mb-2">Annadanam</h1>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-col justify-center w-full lg:w-1/2 p-4 sm:p-6 lg:p-10 space-y-4 lg:space-y-6 items-center text-center lg:text-left lg:items-start">
+                  <h1 className="text-3xl font-bold text-deep-brown mb-1 lg:mb-2 max-w-xl">Annadanam</h1>
+                  <div className="flex flex-wrap gap-2 mb-2 lg:mb-4 justify-center lg:justify-start">
                     <span className="flex items-center bg-light-saffron px-3 py-1 rounded-full text-sm">
                       <i className="fas fa-clock mr-2 text-deep-saffron"></i>
                       Daily Goal: {annadanamGoal.goalMeals.toLocaleString()} meals
                     </span>
                   </div>
-                  <p className="text-deep-brown/80 mb-6 text-base leading-relaxed">"Annam Brahma" - Food is divine. Support our daily food distribution program and be part of this sacred service.</p>
+                  <p className="text-deep-brown/80 text-base leading-relaxed max-w-xl mb-2 lg:mb-6">"Annam Brahma" - Food is divine. Support our daily food distribution program and be part of this sacred service.</p>
                   <a
                     href="https://rzp.io/l/your-annadanam-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full"
+                    className="w-full lg:w-auto"
                   >
-                    <button className="bg-peacock-green text-white px-8 py-3 rounded-xl font-semibold shadow-spiritual hover:bg-peacock-green/90 transition w-full text-lg mb-4">
+                    <button className="bg-peacock-green text-white px-8 py-3 rounded-xl font-semibold shadow-spiritual hover:bg-peacock-green/90 transition w-full lg:w-auto text-lg mb-2 lg:mb-4">
                       Donate Now
                     </button>
                   </a>
                   {/* Recurring Donation Button */}
-                  <div className="w-full mb-4">
-                    <div className="text-center text-deep-brown/70 text-sm mb-2">Want to support Annadanam every month?</div>
+                  <div className="w-full lg:w-auto mb-2 lg:mb-4">
+                    <div className="text-center lg:text-left text-deep-brown/70 text-sm mb-2">Want to support Annadanam every month?</div>
                     <a
                       href="https://forms.gle/your-google-form-link"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full"
+                      className="w-full lg:w-auto"
                     >
-                      <button className="bg-light-saffron text-deep-brown px-8 py-3 rounded-xl font-semibold shadow-spiritual hover:bg-deep-saffron hover:text-white transition w-full text-lg">
+                      <button className="bg-light-saffron text-deep-brown px-8 py-3 rounded-xl font-semibold hover:bg-deep-saffron hover:text-white transition w-full lg:w-auto text-lg">
                         Interested in Monthly Recurring Annadanam? Click here
                       </button>
                     </a>
                   </div>
-                  <div className="flex flex-wrap gap-4 mb-4 items-center justify-center w-full">
-                    <div className="flex items-center gap-2 bg-white rounded-xl px-4 py-2 shadow-spiritual text-peacock-green font-semibold text-sm">
-                      <i className="fas fa-lock text-lg"></i> 100% Secure Payment
-                    </div>
-                    <div className="flex items-center gap-2 bg-white rounded-xl px-4 py-2 shadow-spiritual text-peacock-green font-semibold text-sm">
+                  <div className="flex flex-wrap gap-4 mb-2 lg:mb-4 items-center justify-center lg:justify-start w-full">
+                    <div className="flex items-center gap-2 bg-white rounded-xl px-4 py-2 text-peacock-green font-semibold text-sm">
                       <i className="fas fa-certificate text-lg"></i> 80G Certificate Provided Instantly
                     </div>
                   </div>
                   {/* Social Share Buttons */}
-                  <div className="flex gap-4 mb-2 items-center justify-center w-full">
+                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-2 items-center justify-center lg:justify-start w-full lg:w-auto">
                     <a
-                      href={`https://wa.me/?text=${encodeURIComponent('Support Annadanam at Balaji Mandir Charkop: https://balajimandircharkop.com/annadanam')}`}
+                      href={`https://wa.me/?text=${encodeURIComponent('Support Annadanam at Balaji Mandir Charkop: https://tirupatibalajitemplecharkop.com/annadanam')}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-peacock-green text-white px-4 py-2 rounded-lg flex items-center gap-2 font-semibold shadow-spiritual hover:bg-peacock-green/90 transition"
+                      className="bg-peacock-green text-white px-4 py-2 rounded-lg flex items-center gap-2 font-semibold hover:bg-peacock-green/90 transition w-full sm:w-auto justify-center lg:w-auto"
                     >
                       <i className="fab fa-whatsapp"></i> Share on WhatsApp
                     </a>
                     <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=https://balajimandircharkop.com/annadanam`}
+                      href={`https://www.facebook.com/sharer/sharer.php?u=https://tirupatibalajitemplecharkop.com/annadanam`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-[#1877f3] text-white px-4 py-2 rounded-lg flex items-center gap-2 font-semibold shadow-spiritual hover:bg-[#145db2] transition"
+                      className="bg-[#1877f3] text-white px-4 py-2 rounded-lg flex items-center gap-2 font-semibold hover:bg-[#145db2] transition w-full sm:w-auto justify-center lg:w-auto"
                     >
                       <i className="fab fa-facebook"></i> Share on Facebook
                     </a>
@@ -120,29 +119,41 @@ export default function Annadanam() {
               </div>
               {/* Image Carousel */}
               <div className="mb-14 max-w-4xl mx-auto animate-fade-in-up">
-                <div className="bg-white rounded-2xl shadow-spiritual p-6">
-                  <h3 className="text-xl font-bold text-deep-brown mb-4 text-center">Annadanam Gallery</h3>
-                  <Carousel className="relative">
+                <div className="bg-white rounded-2xl p-4 sm:p-6">
+                  <h3 className="text-xl font-bold text-deep-brown mb-6 text-center">Annadanam Gallery</h3>
+                  <Carousel
+                    className="relative"
+                    plugins={[
+                      Autoplay({ delay: 3500 })
+                    ]}
+                  >
                     <CarouselContent>
                       {galleryImages.map((img, idx) => (
                         <CarouselItem key={idx} className="flex items-center justify-center">
                           <img
                             src={img.src}
                             alt={img.alt}
-                            className="rounded-xl object-cover w-full max-h-80"
+                            className="rounded-xl object-cover w-full max-h-48 sm:max-h-80 mb-2"
                             loading="lazy"
                           />
                         </CarouselItem>
                       ))}
                     </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
+                    {/* Overlayed navigation buttons */}
+                    <div className="absolute inset-0 flex items-center justify-between pointer-events-none">
+                      <div className="pointer-events-auto">
+                        <CarouselPrevious className="relative left-2 top-0 bg-white/80 hover:bg-white text-peacock-green border-none shadow rounded-full" />
+                      </div>
+                      <div className="pointer-events-auto">
+                        <CarouselNext className="relative right-2 top-0 bg-white/80 hover:bg-white text-peacock-green border-none shadow rounded-full" />
+                      </div>
+                    </div>
                   </Carousel>
                 </div>
               </div>
               {/* SEO Description Block */}
               <div className="mb-14 max-w-4xl mx-auto animate-fade-in-up">
-                <div className="bg-white rounded-2xl shadow-spiritual p-6 text-deep-brown/90 text-base leading-relaxed">
+                <div className="bg-white rounded-2xl shadow-spiritual p-4 sm:p-6 text-deep-brown/90 text-base leading-relaxed">
                   <h3 className="text-lg font-bold text-deep-brown mb-2">About Annadanam (SEO)</h3>
                   <p>{seoDescription}</p>
                 </div>
@@ -153,7 +164,7 @@ export default function Annadanam() {
               {annadanamTestimonials.length > 0 && (
                 <div className="mb-14 max-w-4xl mx-auto animate-fade-in-up">
                   <h3 className="text-xl font-bold text-deep-brown mb-4 text-center">What Devotees Say About Annadanam</h3>
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {annadanamTestimonials.map((t, idx) => (
                       <div key={idx} className="bg-white rounded-xl shadow-spiritual p-4">
                         <div className="flex items-center gap-2 mb-2">
@@ -165,14 +176,14 @@ export default function Annadanam() {
                     ))}
                   </div>
                   <div className="text-center mt-6">
-                    <span className="text-deep-brown/70 text-sm">Have you experienced Annadanam? <a href="mailto:info@balajimandircharkop.com" className="text-peacock-green underline hover:text-deep-saffron">Share your story</a> and inspire others!</span>
+                    <span className="text-deep-brown/70 text-sm">Have you experienced Annadanam? <a href="mailto:charkopbalaji1@gmail.com" className="text-peacock-green underline hover:text-deep-saffron">Share your story</a> and inspire others!</span>
                   </div>
                 </div>
               )}
               {/* Divider */}
               <div className="border-t border-light-saffron/40 my-12"></div>
               {/* Impact Stats Section */}
-              <div className="flex flex-wrap justify-center gap-5 mb-8 animate-fade-in-up">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8 animate-fade-in-up">
                 {[
                   { value: annadanamGoal.goalMeals, label: "Daily Goal" },
                   { value: annadanamGoal.currentMeals, label: "Meals Served Today" },
@@ -181,9 +192,9 @@ export default function Annadanam() {
                 ].map((stat, idx) => (
                   <div
                     key={idx}
-                    className="bg-white rounded-2xl shadow-lg border border-light-saffron px-8 py-6 flex flex-col items-center min-w-[150px] max-w-[200px] w-full"
+                    className="bg-white rounded-2xl shadow-lg border border-light-saffron px-6 py-6 flex flex-col items-center w-full"
                   >
-                    <span className="text-4xl font-extrabold text-peacock-green mb-1">{stat.value.toLocaleString()}</span>
+                    <span className="text-3xl sm:text-4xl font-extrabold text-peacock-green mb-1">{stat.value.toLocaleString()}</span>
                     <span className="text-base font-bold text-deep-brown text-center">{stat.label}</span>
                   </div>
                 ))}
@@ -229,35 +240,7 @@ export default function Annadanam() {
                 </ul>
               </div>
               {/* FAQ Section */}
-              {annadanamFaqData.length > 0 && (
-                <div className="mb-14 mt-12 bg-cream rounded-2xl p-6 max-w-4xl mx-auto animate-fade-in-up">
-                  <h3 className="text-xl font-bold text-deep-brown mb-4 text-center">Annadanam FAQ</h3>
-                  <div className="space-y-4">
-                    {annadanamFaqData.map((faq: any, idx: number) => (
-                      <div key={idx} className="bg-white rounded-xl shadow-spiritual p-4">
-                        <div className="flex items-center justify-between">
-                          <p className="font-semibold text-deep-brown mb-2">{faq.question}</p>
-                          <button
-                            onClick={() =>
-                              setOpenFaqIndexes((prev) => ({
-                                ...prev,
-                                [idx]: !prev[idx],
-                              }))
-                            }
-                            className="ml-4 px-2 py-0.5 rounded-lg bg-light-saffron text-deep-brown font-semibold shadow hover:bg-deep-saffron hover:text-white transition"
-                            aria-label={openFaqIndexes[idx] ? "Minimize answer" : "Expand answer"}
-                          >
-                            {openFaqIndexes[idx] ? "−" : "+"}
-                          </button>
-                        </div>
-                        {openFaqIndexes[idx] && (
-                          <p className="text-deep-brown/80">{faq.answer}</p>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+              <FaqAccordion faqs={annadanamFaqData} title="Annadanam FAQ" />
             </div>
           </div>
         </section>

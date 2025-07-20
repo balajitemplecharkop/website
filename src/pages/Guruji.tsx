@@ -29,8 +29,8 @@ export default function Guruji() {
         <meta property="og:title" content="Our Guruji - Balaji Mandir Charkop" />
         <meta property="og:description" content="Discover the spiritual journey and teachings of Guruji at Balaji Mandir Charkop. Learn about his life, miracles, and service to the community." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://balajimandircharkop.com/guruji" />
-        <meta property="og:image" content="https://balajimandircharkop.com/wp-content/uploads/2024/07/Bhajan-Yajamaan.webp" />
+        <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/guruji" />
+        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/wp-content/uploads/2024/07/Bhajan-Yajamaan.webp" />
       </Helmet>
       <div className="pt-16">
         <section className="py-16 bg-spiritual-beige">

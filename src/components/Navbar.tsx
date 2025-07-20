@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -18,9 +18,26 @@ const navItems = [
 export default function Navbar() {
   const [location] = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const [show, setShow] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY.current && currentScrollY > 60) {
+        setShow(false); // Hide on scroll down
+      } else {
+        setShow(true); // Show on scroll up
+      }
+      lastScrollY.current = currentScrollY;
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 navbar-blur border-b border-light-saffron/20 shadow-lg backdrop-blur-md bg-white/80 transition-spiritual" aria-label="Main Navigation">
+    <nav className={`fixed top-0 left-0 right-0 z-50 navbar-blur border-b border-light-saffron/20 shadow-lg backdrop-blur-md bg-white/80 transition-spiritual duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}
+      aria-label="Main Navigation">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 py-2">
           {/* Logo/Branding */}
@@ -31,8 +48,7 @@ export default function Navbar() {
                 <img
                   src="/images/pngtree-balaji-tilak-png-image_6538668.webp"
                   alt="Balaji Mandir Logo"
-                  className="w-12 h-12 rounded-full object-contain bg-white shadow-md border border-light-saffron"
-                  style={{ background: '#fff' }}
+                  className="w-16 h-16 rounded-full object-contain"
                   loading="lazy"
                 />
               </div>
@@ -71,13 +87,15 @@ export default function Navbar() {
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="text-deep-brown" aria-label="Open Menu">
-                  <Menu className="h-7 w-7" />
+                  <Menu className={`h-7 w-7 transition-transform transition-opacity duration-300 ${isOpen ? 'rotate-90 opacity-0' : 'rotate-0 opacity-100'}`} />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="bg-spiritual-beige border-light-saffron/20 p-0">
+                <span className="sr-only">Main Navigation</span>
+                {/* Only one close button, top right */}
                 <div className="flex justify-end p-4">
                   <Button variant="ghost" size="icon" className="text-deep-brown" aria-label="Close Menu" onClick={() => setIsOpen(false)}>
-                    <X className="h-7 w-7" />
+                    <X className="h-7 w-7 transition-transform transition-opacity duration-300" />
                   </Button>
                 </div>
                 <div className="flex flex-col space-y-3 px-6 mt-2">

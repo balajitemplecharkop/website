@@ -16,7 +16,7 @@ export default function TempleDevelopment() {
         <meta property="og:title" content="Temple Development - Balaji Mandir Charkop" />
         <meta property="og:description" content="Support the expansion and beautification of Balaji Mandir Charkop. Contribute to our sacred infrastructure projects." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://balajimandircharkop.com/development" />
+        <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/development" />
         <meta property="og:image" content="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" />
       </Helmet>
       <div className="pt-16">
@@ -49,46 +49,29 @@ export default function TempleDevelopment() {
 
             <div className="bg-white/80 rounded-2xl shadow-spiritual p-4 md:p-8">
               <h3 className="text-2xl font-semibold text-deep-brown mb-6">Ongoing Projects</h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project: any) => (
-                  <Card key={project.id} className="bg-cream border border-light-saffron rounded-2xl shadow-lg flex flex-col h-full relative overflow-hidden group transition-spiritual">
-                    <CardContent className="p-0 flex flex-col h-full">
-                      {/* Status Badge */}
-                      <span className={`absolute top-5 right-5 z-10 text-xs px-4 py-1 rounded-full font-semibold shadow ${project.statusColor} bg-deep-saffron text-white`} style={{minWidth: '80px', textAlign: 'center'}}>
-                        {project.status}
-                      </span>
-                      {project.image && (
-                        <img
-                          src={project.image}
-                          alt={project.title}
-                          className="w-full h-40 object-cover rounded-t-2xl"
-                          loading="lazy"
-                        />
-                      )}
-                      <div className="p-6 flex flex-col h-full">
-                        <h4 className="text-lg font-bold text-deep-brown mb-1 break-words line-clamp-2">{project.title}</h4>
-                        <p className="text-deep-brown/70 text-sm mb-4">{project.description}</p>
-                        {/* Progress Bar */}
-                        <div className="w-full h-3 bg-light-saffron/60 rounded-full mb-2 overflow-hidden">
-                          <div className="h-3 bg-deep-saffron rounded-full transition-all duration-500" style={{ width: `${project.progress}%` }}></div>
-                        </div>
-                        <div className="text-peacock-green text-sm font-semibold mb-4">
-                          ₹{project.raised.toLocaleString()} raised of ₹{project.target.toLocaleString()} target
-                        </div>
-                        <div className="mt-auto flex">
-                          <a
-                            href={`https://rzp.io/l/your-link-for-${project.id}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full"
-                          >
-                            <Button className="bg-peacock-green text-white w-full py-2 rounded-xl font-semibold shadow-spiritual hover:bg-peacock-green/90 transition">
-                              Contribute
-                            </Button>
-                          </a>
-                        </div>
-                      </div>
-                    </CardContent>
+                  <Card key={project.id} className="bg-[#fff8f2] border border-light-saffron rounded-2xl shadow-lg p-5 mb-6 relative">
+                    <span
+                      className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold shadow border border-white ${project.statusColor || (project.status === 'Planning' ? 'bg-blue-500/90 text-white' : project.progress >= 100 ? 'bg-green-600/90 text-white' : 'bg-peacock-green/90 text-white')}`}
+                      style={{ zIndex: 2 }}
+                    >
+                      {project.status}
+                    </span>
+                    <h3 className="text-lg font-bold text-deep-brown mb-1">{project.title}</h3>
+                    <p className="text-deep-brown/80 text-base mb-4">{project.description}</p>
+                    <div className="w-full h-3 bg-light-saffron/40 rounded-full mb-2 overflow-hidden">
+                      <div
+                        className={`h-3 ${project.status === 'Planning' ? 'bg-deep-saffron' : 'bg-peacock-green'} rounded-full transition-all duration-500`}
+                        style={{ width: `${project.progress}%` }}
+                      ></div>
+                    </div>
+                    <div className="text-peacock-green text-sm font-semibold mb-4">
+                      ₹{project.raised.toLocaleString()} raised of ₹{project.target.toLocaleString()} target
+                    </div>
+                    <Button className="w-full bg-peacock-green text-white py-3 rounded-xl font-semibold shadow-spiritual hover:bg-peacock-green/90 transition">
+                      Contribute
+                    </Button>
                   </Card>
                 ))}
               </div>

@@ -15,6 +15,8 @@ import { HelmetProvider } from 'react-helmet-async';
 import { Helmet } from 'react-helmet-async';
 import { Suspense, lazy } from "react";
 import { useEffect, useState } from "react";
+import ReactGA from "react-ga4";
+import { useLocation } from "wouter";
 
 // Lazy load large, non-critical pages
 const Gallery = lazy(() => import("@/pages/Gallery"));
@@ -27,8 +29,20 @@ const NotFound = lazy(() => import("@/pages/not-found"));
 const Mantra = lazy(() => import("@/pages/Mantra"));
 const ThankYou = lazy(() => import("@/pages/ThankYou"));
 
+function usePageTracking() {
+  const [location] = useLocation();
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location });
+  }, [location]);
+}
+
 function Router() {
   const [showCookieBanner, setShowCookieBanner] = useState(false);
+  const [location] = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location]);
 
   useEffect(() => {
     const consent = localStorage.getItem("cookieConsent");
@@ -41,7 +55,7 @@ function Router() {
   };
 
   return (
-    <div className="min-h-screen bg-spiritual-beige">
+    <div className="min-h-screen bg-spiritual-beige overflow-x-hidden">
       <Navbar />
       <Switch>
         <Route path="/" component={Home} />
@@ -134,6 +148,7 @@ function Router() {
 }
 
 function App() {
+  usePageTracking();
   return (
     <HelmetProvider>
       <QueryClientProvider client={queryClient}>

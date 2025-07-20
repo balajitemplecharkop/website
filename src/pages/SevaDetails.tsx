@@ -8,6 +8,7 @@ import testimonialsData from "@/data/seva-testimonials.json";
 import { Helmet } from 'react-helmet-async';
 import rawSevaSeoData from "@/data/seva-seo.json";
 import sevaFaqDataRaw from "@/data/seva-faq.json";
+import FaqAccordion from "@/components/FaqAccordion";
 const sevaSeoData: Record<string, { seoDescription: string }> = rawSevaSeoData;
 const sevaFaqData: { [key: string]: { question: string; answer: string }[] } = sevaFaqDataRaw;
 
@@ -57,7 +58,7 @@ export default function SevaDetails() {
         <meta property="og:title" content={`${pooja.name} - Temple Seva | Balaji Mandir Charkop`} />
         <meta property="og:description" content={seoBlock || pooja.description} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://balajimandircharkop.com/seva/${pooja.id}`} />
+        <meta property="og:url" content={`https://tirupatibalajitemplecharkop.com/seva/${pooja.id}`} />
         <meta property="og:image" content={pooja.image} />
         {faqList.length > 0 && (
           <script type="application/ld+json">
@@ -80,27 +81,26 @@ export default function SevaDetails() {
         <section className="py-16 bg-spiritual-beige min-h-[80vh]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Main Card */}
-            <div className="bg-white rounded-2xl shadow-spiritual p-0 md:p-8 flex flex-col md:flex-row gap-0 md:gap-8 mb-8 overflow-hidden">
+            <div className="bg-white rounded-2xl shadow-spiritual mb-8 overflow-hidden flex flex-col md:flex-row">
               {/* Image */}
-              <div className="flex-1 flex items-center justify-center bg-cream">
+              <div className="bg-cream w-full md:w-1/2 h-56 sm:h-72 md:h-auto md:min-h-[320px] flex items-center justify-center relative">
                 <img
                   src={pooja.image}
-                  alt={`${pooja.name} ritual setup`}
-                  className="w-full h-64 md:h-80 object-cover rounded-2xl"
+                  alt={pooja.name ? `${pooja.name} ritual setup` : 'Seva image'}
+                  className="w-full h-full object-cover rounded-none md:rounded-none h-48 rounded-t-xl bg-gray-100 md:h-full md:rounded-none"
                   loading="lazy"
                   width="800"
                   height="400"
+                  onError={e => { e.currentTarget.src = '/images/placeholder.webp'; }}
                 />
+                <span className="absolute top-3 right-3 bg-deep-saffron text-white text-lg px-4 py-2 rounded-full font-semibold shadow z-10">₹{pooja.price.toLocaleString()}</span>
               </div>
               {/* Details */}
-              <div className="flex-1 flex flex-col justify-center p-6 md:p-0">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-2">
-                  <h1 className="text-3xl font-bold text-deep-brown">{pooja.name}</h1>
-                  <Badge className="bg-deep-saffron text-white text-lg px-4 py-2 self-start md:self-center">
-                    ₹{pooja.price.toLocaleString()}
-                  </Badge>
+              <div className="flex flex-col justify-center w-full md:w-1/2 p-4 sm:p-6 md:p-10 space-y-4 md:space-y-6 items-center text-center md:text-left md:items-start">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 w-full">
+                  <h1 className="text-3xl font-bold text-deep-brown mb-1 md:mb-2 max-w-xl">{pooja.name}</h1>
                 </div>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-2 md:mb-4 justify-center md:justify-start w-full">
                   <span className="flex items-center bg-light-saffron px-3 py-1 rounded-full text-sm">
                     <i className="fas fa-clock mr-2 text-deep-saffron"></i>
                     {pooja.duration}
@@ -110,48 +110,41 @@ export default function SevaDetails() {
                     {pooja.deity}
                   </span>
                 </div>
-                <p className="text-deep-brown/80 mb-6 text-base leading-relaxed">{pooja.description}</p>
-                <div className="flex flex-col items-center mt-auto">
+                <p className="text-deep-brown/80 text-base leading-relaxed max-w-xl mb-2 md:mb-6">{pooja.description}</p>
+                <a
+                  href={`https://rzp.io/l/your-link-for-${pooja.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full md:w-auto"
+                >
+                  <Button className="bg-peacock-green text-white px-8 py-3 rounded-xl font-semibold hover:bg-peacock-green/90 transition w-full md:w-auto text-lg mb-3 md:mb-4">
+                    Book Now
+                  </Button>
+                </a>
+                {/* 80G Certificate Badge */}
+                <div className="flex items-center gap-2 bg-white rounded-xl px-4 py-2 text-peacock-green font-semibold text-sm w-full justify-center mb-3">
+                  <i className="fas fa-certificate text-lg"></i> Instant 80G Certificate (Mail & WhatsApp)
+                </div>
+                {/* Share Buttons */}
+                <div className="md:hidden flex flex-row gap-2 w-full justify-center items-center mt-2">
                   <a
-                    href={`https://rzp.io/l/your-link-for-${pooja.id}`}
+                    href={`https://wa.me/?text=${encodeURIComponent(`Book ${pooja.name} seva at Balaji Mandir Charkop: https://tirupatibalajitemplecharkop.com/seva/${pooja.id}`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full"
+                    className="bg-peacock-green text-white rounded-lg flex items-center justify-center gap-2 font-semibold hover:bg-peacock-green/90 transition w-1/2 py-2 text-sm min-w-[140px] max-w-[220px]"
                   >
-                    <Button className="bg-peacock-green text-white px-8 py-3 rounded-xl font-semibold shadow-spiritual hover:bg-peacock-green/90 transition w-full text-lg">
-                      Book Now
-                    </Button>
+                    <i className="fab fa-whatsapp"></i> Share on WhatsApp
+                  </a>
+                  <a
+                    href={`https://www.facebook.com/sharer/sharer.php?u=https://tirupatibalajitemplecharkop.com/seva/${pooja.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#1877f3] text-white rounded-lg flex items-center justify-center gap-2 font-semibold hover:bg-[#145db2] transition w-1/2 py-2 text-sm min-w-[140px] max-w-[220px]"
+                  >
+                    <i className="fab fa-facebook"></i> Share on Facebook
                   </a>
                 </div>
               </div>
-            </div>
-            {/* Trust Badges */}
-            <div className="flex flex-wrap gap-4 mb-8 items-center justify-center">
-              <div className="flex items-center gap-2 bg-white rounded-xl px-4 py-2 shadow-spiritual text-peacock-green font-semibold text-sm">
-                <i className="fas fa-lock text-lg"></i> 100% Secure Payment
-              </div>
-              <div className="flex items-center gap-2 bg-white rounded-xl px-4 py-2 shadow-spiritual text-peacock-green font-semibold text-sm">
-                <i className="fas fa-certificate text-lg"></i> 80G Certificate Provided Instantly via Mail & WhatsApp
-              </div>
-            </div>
-            {/* Share Buttons */}
-            <div className="flex gap-4 mb-8 items-center justify-center">
-              <a
-                href={`https://wa.me/?text=${encodeURIComponent(`Book ${pooja.name} seva at Balaji Mandir Charkop: https://balajimandircharkop.com/seva/${pooja.id}`)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-peacock-green text-white px-4 py-2 rounded-lg flex items-center gap-2 font-semibold shadow-spiritual hover:bg-peacock-green/90 transition"
-              >
-                <i className="fab fa-whatsapp"></i> Share on WhatsApp
-              </a>
-              <a
-                href={`https://www.facebook.com/sharer/sharer.php?u=https://balajimandircharkop.com/seva/${pooja.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#1877f3] text-white px-4 py-2 rounded-lg flex items-center gap-2 font-semibold shadow-spiritual hover:bg-[#145db2] transition"
-              >
-                <i className="fab fa-facebook"></i> Share on Facebook
-              </a>
             </div>
             {/* About Section */}
             <Card className="bg-cream shadow-spiritual mb-8">
@@ -198,35 +191,7 @@ export default function SevaDetails() {
               </div>
             )}
             {/* FAQ Section */}
-            {faqList.length > 0 && (
-              <div className="mb-8">
-                <h3 className="text-xl font-bold text-deep-brown mb-4 text-center">Frequently Asked Questions</h3>
-                <div className="space-y-4">
-                  {faqList.map((faq: any, idx: number) => (
-                    <div key={idx} className="bg-white rounded-xl shadow-spiritual p-4">
-                      <div className="flex items-center justify-between">
-                        <p className="font-semibold text-deep-brown mb-2">{faq.question}</p>
-                        <button
-                          onClick={() =>
-                            setOpenFaqIndexes((prev) => ({
-                              ...prev,
-                              [idx]: !prev[idx],
-                            }))
-                          }
-                          className="ml-4 px-2 py-0.5 rounded-lg bg-light-saffron text-deep-brown font-semibold shadow hover:bg-deep-saffron hover:text-white transition"
-                          aria-label={openFaqIndexes[idx] ? "Minimize answer" : "Expand answer"}
-                        >
-                          {openFaqIndexes[idx] ? "−" : "+"}
-                        </button>
-                      </div>
-                      {openFaqIndexes[idx] && (
-                        <p className="text-deep-brown/80">{faq.answer}</p>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+            <FaqAccordion faqs={faqList} title="Seva FAQ" />
             {/* Testimonials */}
             {testimonials.length > 0 && (
               <div className="mb-8">

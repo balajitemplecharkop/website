@@ -82,20 +82,20 @@ export default function Home() {
         <meta name="description" content="Experience divine blessings at Balaji Mandir Charkop. Join us for daily Annadanam, temple seva, spiritual guidance, and community service. Serving devotees since 1998." />
         <meta property="og:title" content="Balaji Mandir Charkop - Spiritual Haven" />
         <meta property="og:description" content="Experience divine blessings at Balaji Mandir Charkop. Join us for daily Annadanam, temple seva, spiritual guidance, and community service. Serving devotees since 1998." />
-        <meta property="og:image" content="https://balajimandircharkop.com/wp-content/uploads/2025/01/12.webp" />
+        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/wp-content/uploads/2025/01/12.webp" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://balajimandircharkop.com/" />
+        <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Balaji Mandir Charkop - Spiritual Haven" />
         <meta name="twitter:description" content="Experience divine blessings at Balaji Mandir Charkop. Join us for daily Annadanam, temple seva, spiritual guidance, and community service. Serving devotees since 1998." />
-        <meta name="twitter:image" content="https://balajimandircharkop.com/wp-content/uploads/2025/01/12.webp" />
+        <meta name="twitter:image" content="https://tirupatibalajitemplecharkop.com/wp-content/uploads/2025/01/12.webp" />
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
             "@type": "HinduTemple",
             "name": "Balaji Mandir Charkop",
             "description": "Experience divine blessings at Balaji Mandir Charkop. Join us for daily Annadanam, temple seva, spiritual guidance, and community service. Serving devotees since 1998.",
-            "image": "https://balajimandircharkop.com/wp-content/uploads/2025/01/12.webp",
+            "image": "https://tirupatibalajitemplecharkop.com/wp-content/uploads/2025/01/12.webp",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Charkop, Kandivali West",
@@ -104,7 +104,7 @@ export default function Home() {
               "postalCode": "400067",
               "addressCountry": "IN"
             },
-            "url": "https://balajimandircharkop.com/"
+            "url": "https://tirupatibalajitemplecharkop.com/"
           }
         `}</script>
       </Helmet>
@@ -160,70 +160,106 @@ export default function Home() {
         {/* Scroll Down Indicator */}
         
         {/* Action Buttons & Quick Stats Section */}
-        <section className="py-16 bg-spiritual-beige" aria-label="Quick Actions and Stats">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center space-y-8">
-              <div className="space-y-4">
-                <h2 className="text-3xl lg:text-4xl font-bold text-deep-brown">
-                  Join Our Sacred Community
-                </h2>
-                <p className="text-lg text-deep-brown/80 max-w-3xl mx-auto">
-                  Experience the divine blessings of Lord Balaji through our daily services, community programs, and spiritual activities.
-                </p>
+        <section className="py-16 bg-white" aria-label="Quick Actions and Stats">
+          <div className="max-w-lg mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col items-center text-center space-y-6">
+              <div className="space-y-2 sm:space-y-4">
+                <h2 className="text-3xl lg:text-4xl font-bold text-deep-brown">Join Our Sacred Community</h2>
+                <p className="text-lg text-deep-brown/80">Experience the divine blessings of Lord Balaji through our daily services, community programs, and spiritual activities.</p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/annadanam">
-                  <Button className="bg-deep-saffron hover:bg-deep-saffron/90 text-white px-8 py-4 rounded-xl font-semibold shadow-spiritual hover:shadow-spiritual-hover text-lg">
-                    <Utensils className="mr-2 h-5 w-5" />
-                    Donate for Annadanam
+              {/* Buttons */}
+              <div className="flex flex-col w-full space-y-3 sm:space-y-0 sm:flex-row sm:justify-center sm:space-x-4">
+                <Link href="/annadanam" className="w-full sm:w-auto">
+                  <Button className="w-full bg-deep-saffron hover:bg-deep-saffron/90 text-white rounded-xl font-bold shadow-lg py-3 text-base flex items-center justify-center gap-2 transition-all">
+                    <span role="img" aria-label="Donate">🍚</span> Donate for Annadanam
                   </Button>
                 </Link>
-                <Link href="/seva">
-                  <Button variant="outline" className="border-2 border-peacock-green text-peacock-green px-8 py-4 rounded-xl font-semibold hover:bg-peacock-green hover:text-white text-lg">
-                    <Heart className="mr-2 h-5 w-5" />
-                    Book Temple Seva
+                <Link href="/seva" className="w-full sm:w-auto">
+                  <Button variant="outline" className="w-full border-2 border-peacock-green text-peacock-green rounded-xl font-bold shadow-lg py-3 text-base flex items-center justify-center gap-2 hover:bg-peacock-green hover:text-white transition-all">
+                    <span role="img" aria-label="Heart">💚</span> Book Temple Seva
                   </Button>
                 </Link>
-                <Link href="/calendar">
-                  <Button variant="outline" className="border-2 border-deep-brown text-deep-brown px-8 py-4 rounded-xl font-semibold hover:bg-deep-brown hover:text-white text-lg">
-                    <Calendar className="mr-2 h-5 w-5" />
-                    View Events
+                <Link href="/calendar" className="w-full sm:w-auto">
+                  <Button variant="ghost" className="w-full border border-light-saffron bg-white text-deep-brown rounded-xl font-bold shadow-lg py-3 text-base flex items-center justify-center gap-2 hover:bg-light-saffron/60 transition-all">
+                    <span role="img" aria-label="Calendar">📅</span> View Events
                   </Button>
                 </Link>
               </div>
 
-              {/* Quick Stats */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 pt-8">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-deep-saffron mb-2">17+</div>
-                  <div className="text-sm text-deep-brown/70 uppercase tracking-wider">Years of Service</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-deep-saffron mb-2">250,000+</div>
-                  <div className="text-sm text-deep-brown/70 uppercase tracking-wider">Devotees</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-deep-saffron mb-2">
-                    {annadanamGoal.currentMeals.toLocaleString()}+
-                  </div>
-                  <div className="text-sm text-deep-brown/70 uppercase tracking-wider mb-2">Daily Meals To Children</div>
-                  {/* Compact Meal Tracker */}
-                  <div className="w-full max-w-[180px] mx-auto">
-                    <div className="bg-gray-200 rounded-full h-2 mb-1">
-                      <div
-                        className="bg-peacock-green h-2 rounded-full transition-all duration-500"
-                        style={{ width: `${(annadanamGoal.currentMeals / annadanamGoal.goalMeals) * 100}%` }}
-                      ></div>
+              {/* Stats Grid */}
+              <div className="w-full pt-4">
+                <div className="hidden md:flex w-full justify-center max-w-4xl mx-auto gap-20 pt-12 pb-12">
+                  <div className="flex flex-col items-center w-1/4">
+                    <div className="w-10 h-10 rounded-full bg-light-saffron flex items-center justify-center mb-4">
+                      <Clock className="text-deep-saffron w-6 h-6" />
                     </div>
-                    <div className="text-xs text-peacock-green font-semibold">
-                      {Math.round((annadanamGoal.currentMeals / annadanamGoal.goalMeals) * 100)}% of goal
+                    <span className="text-4xl font-extrabold text-deep-saffron mb-2 block">17+</span>
+                    <span className="text-base text-deep-brown/70 uppercase tracking-wider text-center block">Years of Service</span>
+                  </div>
+                  <div className="flex flex-col items-center w-1/4">
+                    <div className="w-10 h-10 rounded-full bg-light-saffron flex items-center justify-center mb-4">
+                      <Users className="text-deep-saffron w-6 h-6" />
                     </div>
+                    <span className="text-4xl font-extrabold text-deep-saffron mb-2 block">250,000+</span>
+                    <span className="text-base text-deep-brown/70 uppercase tracking-wider text-center block">Devotees</span>
+                  </div>
+                  <div className="flex flex-col items-center w-1/4">
+                    <div className="w-10 h-10 rounded-full bg-light-saffron flex items-center justify-center mb-4">
+                      <Utensils className="text-deep-saffron w-6 h-6" />
+                    </div>
+                    <span className="text-4xl font-extrabold text-deep-saffron mb-2 block">{annadanamGoal.currentMeals.toLocaleString()}+</span>
+                    <span className="text-base text-deep-brown/70 uppercase tracking-wider text-center block">Daily Meals</span>
+                  </div>
+                  <div className="flex flex-col items-center w-1/4">
+                    <div className="w-10 h-10 rounded-full bg-light-saffron flex items-center justify-center mb-4">
+                      <Heart className="text-deep-saffron w-6 h-6" />
+                    </div>
+                    <span className="text-4xl font-extrabold text-deep-saffron mb-2 block">36+</span>
+                    <span className="text-base text-deep-brown/70 uppercase tracking-wider text-center block">Seva Options</span>
                   </div>
                 </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-deep-saffron mb-2">36+</div>
-                  <div className="text-sm text-deep-brown/70 uppercase tracking-wider">Seva Options</div>
+                <div className="grid grid-cols-2 gap-4 md:hidden">
+                  <div className="flex flex-col items-center justify-center">
+                    <div className="w-10 h-10 rounded-full bg-light-saffron flex items-center justify-center mb-1">
+                      <Clock className="text-deep-saffron w-6 h-6" />
+                    </div>
+                    <span className="text-2xl font-extrabold text-deep-saffron">17+</span>
+                    <span className="text-xs text-deep-brown/70 uppercase tracking-wider mt-1 text-center">Years of Service</span>
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <div className="w-10 h-10 rounded-full bg-light-saffron flex items-center justify-center mb-1">
+                      <Users className="text-deep-saffron w-6 h-6" />
+                </div>
+                    <span className="text-2xl font-extrabold text-deep-saffron">250,000+</span>
+                    <span className="text-xs text-deep-brown/70 uppercase tracking-wider mt-1 text-center">Devotees</span>
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <div className="w-10 h-10 rounded-full bg-light-saffron flex items-center justify-center mb-1">
+                      <Utensils className="text-deep-saffron w-6 h-6" />
+                    </div>
+                    <span className="text-2xl font-extrabold text-deep-saffron">{annadanamGoal.currentMeals.toLocaleString()}+</span>
+                    <span className="text-xs text-deep-brown/70 uppercase tracking-wider mt-1 text-center">Daily Meals</span>
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <div className="w-10 h-10 rounded-full bg-light-saffron flex items-center justify-center mb-1">
+                      <Heart className="text-deep-saffron w-6 h-6" />
+                    </div>
+                    <span className="text-2xl font-extrabold text-deep-saffron">36+</span>
+                    <span className="text-xs text-deep-brown/70 uppercase tracking-wider mt-1 text-center">Seva Options</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Progress Bar Section */}
+              <div className="w-full space-y-2 pt-4">
+                <div className="text-sm font-semibold text-deep-brown">Goal: Feed 25,000 Children</div>
+                <div className="text-xs font-bold text-green-700 mb-1">{Math.round((annadanamGoal.currentMeals / annadanamGoal.goalMeals) * 100)}% of goal</div>
+                <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                  <div
+                    className="bg-green-600 h-3 rounded-full transition-all duration-500"
+                    style={{ width: `${(annadanamGoal.currentMeals / annadanamGoal.goalMeals) * 100}%` }}
+                  ></div>
                 </div>
               </div>
             </div>
@@ -269,67 +305,99 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-4 gap-8">
-              <Link href="/annadanam">
-                <Card className="cursor-pointer shadow-spiritual hover:shadow-spiritual-hover transition-spiritual group h-full flex flex-col">
-                  <CardContent className="p-8 text-center flex flex-col h-full">
-                    <div className="w-16 h-16 bg-deep-saffron rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-spiritual">
-                      <Utensils className="text-white text-2xl" />
+            {/* Ways to Contribute Cards */}
+            <div className="hidden md:flex w-full justify-center gap-12 pt-8">
+              {/* Annadanam */}
+              <Card className="max-w-xs flex flex-col items-center text-center p-6 rounded-2xl border border-light-saffron shadow-md">
+                <div className="w-12 h-12 rounded-full bg-deep-saffron flex items-center justify-center mb-4">
+                  <Utensils className="text-white w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-deep-brown mb-2">Annadanam</h3>
+                <p className="text-deep-brown/80 mb-4">Support our daily food distribution program serving 500+ meals.</p>
+                <Button className="w-full bg-deep-saffron hover:bg-deep-saffron/90 text-white rounded-lg font-semibold py-3 shadow transition-all">
+                  Contribute Now
+                </Button>
+              </Card>
+              {/* Temple Seva */}
+              <Card className="max-w-xs flex flex-col items-center text-center p-6 rounded-2xl border border-light-saffron shadow-md">
+                <div className="w-12 h-12 rounded-full bg-peacock-green flex items-center justify-center mb-4">
+                  <Heart className="text-white w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-deep-brown mb-2">Temple Seva</h3>
+                <p className="text-deep-brown/80 mb-4">Participate in sacred rituals and poojas for divine blessings.</p>
+                <Button className="w-full bg-peacock-green hover:bg-peacock-green/90 text-white rounded-lg font-semibold py-3 shadow transition-all">
+                  Book Seva
+                </Button>
+              </Card>
+              {/* Development */}
+              <Card className="max-w-xs flex flex-col items-center text-center p-6 rounded-2xl border border-light-saffron shadow-md">
+                <div className="w-12 h-12 rounded-full bg-light-saffron flex items-center justify-center mb-4">
+                  <Hammer className="text-deep-saffron w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-deep-brown mb-2">Development</h3>
+                <p className="text-deep-brown/80 mb-4">Help expand and beautify our sacred temple infrastructure.</p>
+                <Button variant="outline" className="w-full border-deep-saffron text-deep-saffron rounded-lg font-semibold py-3 shadow transition-all hover:bg-deep-saffron hover:text-white">
+                  Support Project
+                </Button>
+              </Card>
+              {/* Join Our Family */}
+              <Card className="max-w-xs flex flex-col items-center text-center p-6 rounded-2xl border border-light-saffron shadow-md">
+                <div className="w-12 h-12 rounded-full bg-deep-saffron/20 flex items-center justify-center mb-4">
+                  <Users className="text-deep-saffron w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-deep-brown mb-2">Join Our Family</h3>
+                <p className="text-deep-brown/80 mb-4">Become a volunteer or join us with your unique skills to help serve the community and the divine mission.</p>
+                <Button className="w-full bg-deep-saffron hover:bg-deep-saffron/90 text-white rounded-lg font-semibold py-3 shadow transition-all">
+                  Join as Family
+                </Button>
+              </Card>
+            </div>
+            {/* Ways to Contribute Cards - Mobile */}
+            <div className="flex flex-col space-y-6 md:hidden">
+              {/* Annadanam Card */}
+              <Card className="max-w-sm mx-auto p-6 rounded-2xl border border-light-saffron shadow-md flex flex-col items-center text-center">
+                <div className="w-12 h-12 rounded-full bg-deep-saffron flex items-center justify-center mb-4">
+                  <Utensils className="text-white w-6 h-6" />
                     </div>
-                    <h3 className="text-xl font-semibold text-deep-brown mb-3">Annadanam</h3>
-                    <p className="text-deep-brown/70 mb-6">Support our daily food distribution program serving 500+ meals.</p>
-                    <Button className="bg-deep-saffron hover:bg-deep-saffron/90 text-white">
+                <h3 className="text-xl font-bold text-deep-brown mb-2">Annadanam</h3>
+                <p className="text-deep-brown/80 mb-4">Support our daily food distribution program serving 500+ meals.</p>
+                <Button className="w-full bg-deep-saffron hover:bg-deep-saffron/90 text-white rounded-lg font-semibold py-3 shadow transition-all">
                       Contribute Now
                     </Button>
-                  </CardContent>
                 </Card>
-              </Link>
-
-              <Link href="/seva">
-                <Card className="cursor-pointer shadow-spiritual hover:shadow-spiritual-hover transition-spiritual group h-full flex flex-col">
-                  <CardContent className="p-8 text-center flex flex-col h-full">
-                    <div className="w-16 h-16 bg-peacock-green rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-spiritual">
-                      <Heart className="text-white text-2xl" />
+              {/* Temple Seva Card */}
+              <Card className="max-w-sm mx-auto p-6 rounded-2xl border border-light-saffron shadow-md flex flex-col items-center text-center">
+                <div className="w-12 h-12 rounded-full bg-peacock-green flex items-center justify-center mb-4">
+                  <Heart className="text-white w-6 h-6" />
                     </div>
-                    <h3 className="text-xl font-semibold text-deep-brown mb-3">Temple Seva</h3>
-                    <p className="text-deep-brown/70 mb-6">Participate in sacred rituals and poojas for divine blessings.</p>
-                    <Button className="bg-peacock-green hover:bg-peacock-green/90 text-white">
+                <h3 className="text-xl font-bold text-deep-brown mb-2">Temple Seva</h3>
+                <p className="text-deep-brown/80 mb-4">Participate in sacred rituals and poojas for divine blessings.</p>
+                <Button className="w-full bg-peacock-green hover:bg-peacock-green/90 text-white rounded-lg font-semibold py-3 shadow transition-all">
                       Book Seva
                     </Button>
-                  </CardContent>
                 </Card>
-              </Link>
-
-              <Link href="/development">
-                <Card className="cursor-pointer shadow-spiritual hover:shadow-spiritual-hover transition-spiritual group h-full flex flex-col">
-                  <CardContent className="p-8 text-center flex flex-col h-full">
-                    <div className="w-16 h-16 bg-light-saffron border-2 border-deep-saffron rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-spiritual">
-                      <Hammer className="text-deep-saffron text-2xl" />
+              {/* Development Card */}
+              <Card className="max-w-sm mx-auto p-6 rounded-2xl border border-light-saffron shadow-md flex flex-col items-center text-center">
+                <div className="w-12 h-12 rounded-full bg-light-saffron border-2 border-deep-saffron flex items-center justify-center mb-4">
+                  <Hammer className="text-deep-saffron w-6 h-6" />
                     </div>
-                    <h3 className="text-xl font-semibold text-deep-brown mb-3">Development</h3>
-                    <p className="text-deep-brown/70 mb-6">Help expand and beautify our sacred temple infrastructure.</p>
-                    <Button variant="outline" className="border-deep-saffron text-deep-saffron hover:bg-deep-saffron hover:text-white">
+                <h3 className="text-xl font-bold text-deep-brown mb-2">Development</h3>
+                <p className="text-deep-brown/80 mb-4">Help expand and beautify our sacred temple infrastructure.</p>
+                <Button variant="outline" className="w-full border-deep-saffron text-deep-saffron rounded-lg font-semibold py-3 shadow transition-all hover:bg-deep-saffron hover:text-white">
                       Support Project
                     </Button>
-                  </CardContent>
                 </Card>
-              </Link>
-
               {/* Join Our Family Card */}
-              <Link href="/join-us">
-                <Card className="cursor-pointer shadow-spiritual hover:shadow-spiritual-hover transition-spiritual group h-full flex flex-col">
-                  <CardContent className="p-8 text-center flex flex-col h-full">
-                    <div className="w-16 h-16 bg-deep-saffron/20 border-2 border-deep-saffron rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-spiritual">
-                      <Users className="text-deep-saffron text-2xl" />
+              <Card className="max-w-sm mx-auto p-6 rounded-2xl border border-light-saffron shadow-md flex flex-col items-center text-center">
+                <div className="w-12 h-12 rounded-full bg-deep-saffron/20 border-2 border-deep-saffron flex items-center justify-center mb-4">
+                  <Users className="text-deep-saffron w-6 h-6" />
                     </div>
-                    <h3 className="text-xl font-semibold text-deep-brown mb-3">Join Our Family</h3>
-                    <p className="text-deep-brown/70 mb-6">Become a volunteer or join us with your unique skills to help serve the community and the divine mission.</p>
-                    <Button className="bg-deep-saffron hover:bg-deep-saffron/90 text-white">
+                <h3 className="text-xl font-bold text-deep-brown mb-2">Join Our Family</h3>
+                <p className="text-deep-brown/80 mb-4">Become a volunteer or join us with your unique skills to help serve the community and the divine mission.</p>
+                <Button className="w-full bg-deep-saffron hover:bg-deep-saffron/90 text-white rounded-lg font-semibold py-3 shadow transition-all">
                       Join as Family
                     </Button>
-                  </CardContent>
                 </Card>
-              </Link>
             </div>
           </div>
         </section>
@@ -341,7 +409,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-deep-brown mb-3">Why Visit Us?</h2>
               <p className="text-lg text-deep-brown/80 max-w-2xl mx-auto">Experience more than just a temple—discover a vibrant community, spiritual growth, and acts of compassion that make every visit memorable.</p>
             </div>
-            <div className="grid md:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-4 gap-8 hidden md:grid">
               <div className="bg-white rounded-2xl shadow-spiritual p-6 flex flex-col items-center text-center group hover:shadow-spiritual-hover transition-spiritual">
                 <Star className="text-deep-saffron text-3xl mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="font-semibold text-lg text-deep-brown mb-2">Spiritual Sanctuary</h3>
@@ -361,6 +429,29 @@ export default function Home() {
                 <Users className="text-peacock-green text-3xl mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="font-semibold text-lg text-deep-brown mb-2">Welcoming Community</h3>
                 <p className="text-deep-brown/70 text-sm">Be part of a warm, inclusive family—volunteer, learn, and grow together.</p>
+              </div>
+            </div>
+            {/* Mobile Why Visit Us - vertical stack */}
+            <div className="flex flex-col space-y-6 md:hidden">
+              <div className="bg-white rounded-2xl shadow-spiritual p-6 flex flex-col items-center text-center">
+                <Star className="text-deep-saffron text-4xl mb-4" />
+                <h3 className="font-semibold text-lg text-deep-brown mb-2">Spiritual Sanctuary</h3>
+                <p className="text-deep-brown/70 text-base">Find peace, purpose, and blessings in a serene, sacred environment.</p>
+              </div>
+              <div className="bg-white rounded-2xl shadow-spiritual p-6 flex flex-col items-center text-center">
+                <Utensils className="text-peacock-green text-4xl mb-4" />
+                <h3 className="font-semibold text-lg text-deep-brown mb-2">Community Service</h3>
+                <p className="text-deep-brown/70 text-base">Join hands in Annadanam and seva, making a real difference in lives every day.</p>
+              </div>
+              <div className="bg-white rounded-2xl shadow-spiritual p-6 flex flex-col items-center text-center">
+                <Calendar className="text-deep-saffron text-4xl mb-4" />
+                <h3 className="font-semibold text-lg text-deep-brown mb-2">Festivals & Events</h3>
+                <p className="text-deep-brown/70 text-base">Celebrate vibrant festivals, rituals, and cultural events with us.</p>
+              </div>
+              <div className="bg-white rounded-2xl shadow-spiritual p-6 flex flex-col items-center text-center">
+                <Users className="text-peacock-green text-4xl mb-4" />
+                <h3 className="font-semibold text-lg text-deep-brown mb-2">Welcoming Community</h3>
+                <p className="text-deep-brown/70 text-base">Be part of a warm, inclusive family—volunteer, learn, and grow together.</p>
               </div>
             </div>
           </div>
@@ -395,7 +486,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 hidden md:grid">
               <Link href="/guruji">
                 <Card className="cursor-pointer shadow-spiritual hover:shadow-spiritual-hover transition-spiritual group bg-white">
                   <CardContent className="p-6 text-center">
@@ -455,6 +546,69 @@ export default function Home() {
                     <div className="flex items-center justify-center text-peacock-green text-sm">
                       <span>View Photos</span>
                       <ArrowRight className="ml-1 h-3 w-3" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            </div>
+            {/* Mobile Explore Our Temple - vertical stack */}
+            <div className="flex flex-col space-y-6 md:hidden">
+              <Link href="/guruji">
+                <Card className="cursor-pointer shadow-spiritual active:shadow-spiritual-hover transition-spiritual bg-white">
+                  <CardContent className="p-7 text-center flex flex-col items-center">
+                    <div className="w-16 h-16 bg-cream rounded-full flex items-center justify-center mb-4">
+                      <Users className="text-deep-saffron text-2xl" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-deep-brown mb-2">Our Guruji</h3>
+                    <p className="text-deep-brown/70 text-base mb-4">Learn about our spiritual leader and temple history</p>
+                    <div className="flex items-center justify-center text-deep-saffron text-base font-medium">
+                      <span>Meet Guruji</span>
+                      <ArrowRight className="ml-1 h-4 w-4" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+              <Link href="/mantra">
+                <Card className="cursor-pointer shadow-spiritual active:shadow-spiritual-hover transition-spiritual bg-white">
+                  <CardContent className="p-7 text-center flex flex-col items-center">
+                    <div className="w-16 h-16 bg-light-green rounded-full flex items-center justify-center mb-4">
+                      <BookOpen className="text-peacock-green text-2xl" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-deep-brown mb-2">Daily Mantras</h3>
+                    <p className="text-deep-brown/70 text-base mb-4">Sacred chants for spiritual awakening and peace</p>
+                    <div className="flex items-center justify-center text-peacock-green text-base font-medium">
+                      <span>Chant Now</span>
+                      <ArrowRight className="ml-1 h-4 w-4" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+              <Link href="/calendar">
+                <Card className="cursor-pointer shadow-spiritual active:shadow-spiritual-hover transition-spiritual bg-white">
+                  <CardContent className="p-7 text-center flex flex-col items-center">
+                    <div className="w-16 h-16 bg-light-saffron rounded-full flex items-center justify-center mb-4">
+                      <Calendar className="text-deep-saffron text-2xl" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-deep-brown mb-2">Events</h3>
+                    <p className="text-deep-brown/70 text-base mb-4">Festivals, celebrations, and special ceremonies</p>
+                    <div className="flex items-center justify-center text-deep-saffron text-base font-medium">
+                      <span>View Calendar</span>
+                      <ArrowRight className="ml-1 h-4 w-4" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+              <Link href="/gallery">
+                <Card className="cursor-pointer shadow-spiritual active:shadow-spiritual-hover transition-spiritual bg-white">
+                  <CardContent className="p-7 text-center flex flex-col items-center">
+                    <div className="w-16 h-16 bg-cream rounded-full flex items-center justify-center mb-4 border-2 border-peacock-green">
+                      <Camera className="text-peacock-green text-2xl" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-deep-brown mb-2">Gallery</h3>
+                    <p className="text-deep-brown/70 text-base mb-4">Sacred moments captured during festivals and rituals</p>
+                    <div className="flex items-center justify-center text-peacock-green text-base font-medium">
+                      <span>View Photos</span>
+                      <ArrowRight className="ml-1 h-4 w-4" />
                     </div>
                   </CardContent>
                 </Card>
@@ -538,16 +692,17 @@ export default function Home() {
               <div className="flex-1 flex items-stretch justify-center relative">
                 <Card className="w-full shadow-spiritual bg-light-green rounded-3xl overflow-hidden relative flex flex-col h-full justify-center">
                   <CardContent className="p-0 w-full h-full flex-1 flex flex-col justify-center">
-                    {/* Map Badge */}
-                    <div className="absolute top-4 left-4 z-10 bg-peacock-green text-white px-4 py-1 rounded-full shadow text-sm font-semibold">
+                    {/* Map Badge - responsive position */}
+                    <div className="bg-peacock-green text-white px-4 py-1 rounded-full shadow text-sm font-semibold absolute top-4 left-4 z-10">
                       Find Us Here
                     </div>
-                    <div className="w-full h-full min-h-[320px] rounded-3xl overflow-hidden flex items-center justify-center">
+                    <div className="w-full h-[220px] xs:h-[260px] sm:h-[320px] md:h-full md:min-h-[320px] rounded-3xl overflow-hidden flex items-center justify-center p-2 md:rounded-none md:p-0">
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19484.32628345523!2d72.83089!3d19.223041!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b134352dddb7%3A0xb2b600c33698fb2f!2sShree%20Balaji%20Mandir!5e1!3m2!1sen!2sin!4v1752331114486!5m2!1sen!2sin"
                         width="100%"
                         height="100%"
-                        style={{ border: 0 }}
+                        style={{ border: 0, minHeight: '200px', borderRadius: '1.5rem', width: '100%' }}
+                        className="md:rounded-none"
                         allowFullScreen={true}
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"

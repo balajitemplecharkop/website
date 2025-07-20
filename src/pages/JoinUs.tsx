@@ -13,7 +13,7 @@ export default function JoinUs() {
         <meta property="og:title" content="Join Us - Balaji Mandir Charkop" />
         <meta property="og:description" content="Join the Balaji Mandir Charkop family. Volunteer, share your skills, or apply for open roles to help serve the community." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://balajimandircharkop.com/join-us" />
+        <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/join-us" />
       </Helmet>
       <div className="pt-20 pb-16 bg-white min-h-screen">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

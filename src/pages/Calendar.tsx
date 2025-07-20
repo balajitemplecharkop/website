@@ -79,7 +79,7 @@ export default function Calendar() {
         <meta property="og:title" content="Temple Calendar - Balaji Mandir Charkop" />
         <meta property="og:description" content="Stay updated with temple events, festivals, and community programs at Balaji Mandir Charkop." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://balajimandircharkop.com/calendar" />
+        <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/calendar" />
       </Helmet>
       <div className="pt-16">
         <section className="py-16 bg-white">
@@ -91,7 +91,7 @@ export default function Calendar() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-8">
+            <div className="grid gap-8 lg:grid-cols-3">
               {/* Calendar Widget */}
               <div className="lg:col-span-2">
                 <Card className="bg-spiritual-beige shadow-spiritual">
@@ -159,7 +159,7 @@ export default function Calendar() {
               </div>
 
               {/* Sidebar */}
-              <div className="space-y-6">
+              <div className="space-y-6 lg:space-y-6 lg:col-span-1">
                 {/* Upcoming Events */}
                 <Card className="bg-cream shadow-spiritual">
                   <CardHeader>

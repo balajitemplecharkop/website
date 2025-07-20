@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin
 Disallow: /login
 Disallow: /dashboard
-Sitemap: https://balajimandircharkop.com/sitemap.xml/
+Sitemap: https://tirupatibalajitemplecharkop.com/sitemap.xml/

@@ -10,7 +10,7 @@ export default function Terms() {
         <meta property="og:title" content="Terms &amp; Conditions - Balaji Mandir Charkop" />
         <meta property="og:description" content="Read the terms and conditions for using the Balaji Mandir Charkop website and services." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://balajimandircharkop.com/terms" />
+        <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/terms" />
       </Helmet>
       <div className="pt-24 min-h-screen bg-white flex items-center justify-center">
         <Card className="max-w-2xl w-full mx-4">
