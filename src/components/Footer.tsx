@@ -11,6 +11,7 @@ export default function Footer() {
     { path: "/terms", label: "Terms & Conditions" },
     { path: "/privacy", label: "Privacy Policy" },
     { path: "/refund", label: "Cancellation & Refund Policy" },
+    { path: "/contact", label: "Contact Us" },
   ];
 
   const templeInfo = [

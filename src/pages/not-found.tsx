@@ -1,9 +1,30 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle } from "lucide-react";
+import { Helmet } from 'react-helmet-async';
 
 export default function NotFound() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-cream to-spiritual-beige">
+      <Helmet>
+        <title>Page Not Found - Balaji Mandir Charkop</title>
+        <meta name="description" content="Sorry, the page you are looking for does not exist. Return to the Balaji Mandir Charkop homepage." />
+        <meta property="og:title" content="Page Not Found - Balaji Mandir Charkop" />
+        <meta property="og:description" content="Sorry, the page you are looking for does not exist. Return to the Balaji Mandir Charkop homepage." />
+        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <meta property="og:site_name" content="Balaji Mandir Charkop" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/not-found" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Page Not Found - Balaji Mandir Charkop" />
+        <meta name="twitter:description" content="Sorry, the page you are looking for does not exist. Return to the Balaji Mandir Charkop homepage." />
+        <meta name="twitter:image" content="https://tirupatibalajitemplecharkop.com/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <meta name="theme-color" content="#eab308" />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://tirupatibalajitemplecharkop.com/not-found" />
+        <link rel="icon" type="image/webp" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+      </Helmet>
       <Card className="w-full max-w-md mx-4 shadow-xl rounded-2xl border-0">
         <CardContent className="flex flex-col items-center pt-10 pb-8 px-6 space-y-6">
           <AlertCircle className="h-16 w-16 text-red-400 mb-2 animate-bounce" />

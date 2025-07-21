@@ -12,12 +12,141 @@ export default function TempleDevelopment() {
     <>
       <Helmet>
         <title>Temple Development - Balaji Mandir Charkop</title>
-        <meta name="description" content="Support the expansion and beautification of Balaji Mandir Charkop. Contribute to our sacred infrastructure projects." />
+        <meta name="description" content="Support the development and beautification of Balaji Mandir Charkop. Help us expand our sacred space for the community." />
         <meta property="og:title" content="Temple Development - Balaji Mandir Charkop" />
-        <meta property="og:description" content="Support the expansion and beautification of Balaji Mandir Charkop. Contribute to our sacred infrastructure projects." />
+        <meta property="og:description" content="Support the development and beautification of Balaji Mandir Charkop. Help us expand our sacred space for the community." />
+        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/images/Tirupati_Balaji_Temple_d486b6408b.webp" />
+        <meta property="og:site_name" content="Balaji Mandir Charkop" />
+        <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/development" />
-        <meta property="og:image" content="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Temple Development - Balaji Mandir Charkop" />
+        <meta name="twitter:description" content="Support the development and beautification of Balaji Mandir Charkop. Help us expand our sacred space for the community." />
+        <meta name="twitter:image" content="https://tirupatibalajitemplecharkop.com/images/Tirupati_Balaji_Temple_d486b6408b.webp" />
+        <meta name="theme-color" content="#eab308" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://tirupatibalajitemplecharkop.com/development" />
+        <link rel="icon" type="image/webp" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "HinduTemple",
+              "@id": "https://tirupatibalajitemplecharkop.com/#temple",
+              "name": "Balaji Mandir Charkop",
+              "alternateName": "Shree Balaji Padmavati Foundation",
+              "description": "Support the development and beautification of Balaji Mandir Charkop. Help us expand our sacred space for the community.",
+              "image": [
+                "https://tirupatibalajitemplecharkop.com/images/Tirupati_Balaji_Temple_d486b6408b.webp"
+              ],
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://tirupatibalajitemplecharkop.com/images/pngtree-balaji-tilak-png-image_6538668.webp",
+                "width": 180,
+                "height": 180
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3-289, Priyadarshini Vidyamandir Marg, opp. Priyadarshani School, Shivkrupa CHS, Sector 7, Kandivali West",
+                "addressLocality": "Mumbai",
+                "addressRegion": "Maharashtra",
+                "postalCode": "400067",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 19.223041,
+                "longitude": 72.83089
+              },
+              "telephone": "+91-9920716663",
+              "email": "charkopbalaji1@gmail.com",
+              "url": "https://tirupatibalajitemplecharkop.com/development",
+              "founder": {
+                "@type": "Person",
+                "name": "Guruji (Gurunath)",
+                "description": "Spiritual leader and founder of Balaji Mandir Charkop"
+              },
+              "foundingDate": "1998",
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+                  ],
+                  "opens": "05:30",
+                  "closes": "21:00"
+                }
+              ],
+              "amenityFeature": [
+                {
+                  "@type": "LocationFeatureSpecification",
+                  "name": "Development",
+                  "description": "Support the development and beautification of Balaji Mandir Charkop. Help us expand our sacred space for the community."
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://tirupatibalajitemplecharkop.com/#development",
+              "serviceType": "Temple Development",
+              "provider": {
+                "@id": "https://tirupatibalajitemplecharkop.com/#temple"
+              },
+              "areaServed": "Mumbai, Maharashtra, India",
+              "description": "Support the development and beautification of Balaji Mandir Charkop. Help us expand our sacred space for the community.",
+              "offers": {
+                "@type": "Offer",
+                "url": "https://tirupatibalajitemplecharkop.com/development",
+                "price": "Donation-based",
+                "priceCurrency": "INR"
+              }
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://tirupatibalajitemplecharkop.com/#organization",
+              "name": "Shree Balaji Padmavati Foundation",
+              "url": "https://tirupatibalajitemplecharkop.com/",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://tirupatibalajitemplecharkop.com/images/pngtree-balaji-tilak-png-image_6538668.webp"
+              },
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "+91-9920716663",
+                  "contactType": "customer service",
+                  "areaServed": "IN",
+                  "availableLanguage": ["English", "Hindi", "Marathi"]
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://tirupatibalajitemplecharkop.com/#website",
+              "url": "https://tirupatibalajitemplecharkop.com/",
+              "name": "Balaji Mandir Charkop",
+              "publisher": {
+                "@id": "https://tirupatibalajitemplecharkop.com/#organization"
+              }
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://tirupatibalajitemplecharkop.com/development#webpage",
+              "url": "https://tirupatibalajitemplecharkop.com/development",
+              "name": "Temple Development - Balaji Mandir Charkop",
+              "isPartOf": {
+                "@id": "https://tirupatibalajitemplecharkop.com/#website"
+              },
+              "about": {
+                "@id": "https://tirupatibalajitemplecharkop.com/#temple"
+              }
+            }
+          ]
+        }
+        `}</script>
       </Helmet>
       <div className="pt-16">
         <section className="py-16 bg-spiritual-beige">

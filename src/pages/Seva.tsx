@@ -45,11 +45,141 @@ export default function Seva() {
     <>
       <Helmet>
         <title>Temple Seva - Balaji Mandir Charkop</title>
-        <meta name="description" content="Participate in sacred rituals and poojas at Balaji Mandir Charkop. Choose from a variety of spiritual services and receive divine blessings." />
+        <meta name="description" content="Book temple seva at Balaji Mandir Charkop. Participate in sacred rituals and poojas for divine blessings." />
         <meta property="og:title" content="Temple Seva - Balaji Mandir Charkop" />
-        <meta property="og:description" content="Participate in sacred rituals and poojas at Balaji Mandir Charkop. Choose from a variety of spiritual services and receive divine blessings." />
+        <meta property="og:description" content="Book temple seva at Balaji Mandir Charkop. Participate in sacred rituals and poojas for divine blessings." />
+        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/images/12.webp" />
+        <meta property="og:site_name" content="Balaji Mandir Charkop" />
+        <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/seva" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Temple Seva - Balaji Mandir Charkop" />
+        <meta name="twitter:description" content="Book temple seva at Balaji Mandir Charkop. Participate in sacred rituals and poojas for divine blessings." />
+        <meta name="twitter:image" content="https://tirupatibalajitemplecharkop.com/images/12.webp" />
+        <meta name="theme-color" content="#eab308" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://tirupatibalajitemplecharkop.com/seva" />
+        <link rel="icon" type="image/webp" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "HinduTemple",
+              "@id": "https://tirupatibalajitemplecharkop.com/#temple",
+              "name": "Balaji Mandir Charkop",
+              "alternateName": "Shree Balaji Padmavati Foundation",
+              "description": "Participate in sacred rituals and poojas for divine blessings at Balaji Mandir Charkop.",
+              "image": [
+                "https://tirupatibalajitemplecharkop.com/images/12.webp"
+              ],
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://tirupatibalajitemplecharkop.com/images/pngtree-balaji-tilak-png-image_6538668.webp",
+                "width": 180,
+                "height": 180
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3-289, Priyadarshini Vidyamandir Marg, opp. Priyadarshani School, Shivkrupa CHS, Sector 7, Kandivali West",
+                "addressLocality": "Mumbai",
+                "addressRegion": "Maharashtra",
+                "postalCode": "400067",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 19.223041,
+                "longitude": 72.83089
+              },
+              "telephone": "+91-9920716663",
+              "email": "charkopbalaji1@gmail.com",
+              "url": "https://tirupatibalajitemplecharkop.com/seva",
+              "founder": {
+                "@type": "Person",
+                "name": "Guruji (Gurunath)",
+                "description": "Spiritual leader and founder of Balaji Mandir Charkop"
+              },
+              "foundingDate": "1998",
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+                  ],
+                  "opens": "05:30",
+                  "closes": "21:00"
+                }
+              ],
+              "amenityFeature": [
+                {
+                  "@type": "LocationFeatureSpecification",
+                  "name": "Seva",
+                  "description": "Participate in sacred rituals and poojas for divine blessings."
+                }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://tirupatibalajitemplecharkop.com/#seva",
+              "serviceType": "Temple Seva",
+              "provider": {
+                "@id": "https://tirupatibalajitemplecharkop.com/#temple"
+              },
+              "areaServed": "Mumbai, Maharashtra, India",
+              "description": "Book temple seva at Balaji Mandir Charkop. Participate in sacred rituals and poojas for divine blessings.",
+              "offers": {
+                "@type": "Offer",
+                "url": "https://tirupatibalajitemplecharkop.com/seva",
+                "price": "Donation-based",
+                "priceCurrency": "INR"
+              }
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://tirupatibalajitemplecharkop.com/#organization",
+              "name": "Shree Balaji Padmavati Foundation",
+              "url": "https://tirupatibalajitemplecharkop.com/",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://tirupatibalajitemplecharkop.com/images/pngtree-balaji-tilak-png-image_6538668.webp"
+              },
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "+91-9920716663",
+                  "contactType": "customer service",
+                  "areaServed": "IN",
+                  "availableLanguage": ["English", "Hindi", "Marathi"]
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://tirupatibalajitemplecharkop.com/#website",
+              "url": "https://tirupatibalajitemplecharkop.com/",
+              "name": "Balaji Mandir Charkop",
+              "publisher": {
+                "@id": "https://tirupatibalajitemplecharkop.com/#organization"
+              }
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://tirupatibalajitemplecharkop.com/seva#webpage",
+              "url": "https://tirupatibalajitemplecharkop.com/seva",
+              "name": "Temple Seva - Balaji Mandir Charkop",
+              "isPartOf": {
+                "@id": "https://tirupatibalajitemplecharkop.com/#website"
+              },
+              "about": {
+                "@id": "https://tirupatibalajitemplecharkop.com/#temple"
+              }
+            }
+          ]
+        }
+        `}</script>
       </Helmet>
       <div className="pt-16">
         <section className="py-16 bg-spiritual-beige">

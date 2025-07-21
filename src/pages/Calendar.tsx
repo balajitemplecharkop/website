@@ -74,12 +74,24 @@ export default function Calendar() {
   return (
     <>
       <Helmet>
-        <title>Temple Calendar - Balaji Mandir Charkop</title>
-        <meta name="description" content="Stay updated with temple events, festivals, and community programs at Balaji Mandir Charkop." />
-        <meta property="og:title" content="Temple Calendar - Balaji Mandir Charkop" />
-        <meta property="og:description" content="Stay updated with temple events, festivals, and community programs at Balaji Mandir Charkop." />
+        <title>Events Calendar - Balaji Mandir Charkop</title>
+        <meta name="description" content="View upcoming events, festivals, and ceremonies at Balaji Mandir Charkop. Join our vibrant spiritual community." />
+        <meta property="og:title" content="Events Calendar - Balaji Mandir Charkop" />
+        <meta property="og:description" content="View upcoming events, festivals, and ceremonies at Balaji Mandir Charkop. Join our vibrant spiritual community." />
+        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/images/12.webp" />
+        <meta property="og:site_name" content="Balaji Mandir Charkop" />
+        <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/calendar" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Events Calendar - Balaji Mandir Charkop" />
+        <meta name="twitter:description" content="View upcoming events, festivals, and ceremonies at Balaji Mandir Charkop. Join our vibrant spiritual community." />
+        <meta name="twitter:image" content="https://tirupatibalajitemplecharkop.com/images/12.webp" />
+        <meta name="theme-color" content="#eab308" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://tirupatibalajitemplecharkop.com/calendar" />
+        <link rel="icon" type="image/webp" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
       </Helmet>
       <div className="pt-16">
         <section className="py-16 bg-white">

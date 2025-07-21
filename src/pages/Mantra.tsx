@@ -31,12 +31,24 @@ export default function Mantra() {
   return (
     <>
       <Helmet>
-        <title>Mantra of the Day - Balaji Mandir Charkop</title>
-        <meta name="description" content="Chant the mantra of the day from Balaji Mandir Charkop. Experience peace, prosperity, and spiritual awakening." />
-        <meta property="og:title" content="Mantra of the Day - Balaji Mandir Charkop" />
-        <meta property="og:description" content="Chant the mantra of the day from Balaji Mandir Charkop. Experience peace, prosperity, and spiritual awakening." />
+        <title>Daily Mantras - Balaji Mandir Charkop</title>
+        <meta name="description" content="Chant daily mantras and sacred hymns at Balaji Mandir Charkop. Experience spiritual awakening and peace." />
+        <meta property="og:title" content="Daily Mantras - Balaji Mandir Charkop" />
+        <meta property="og:description" content="Chant daily mantras and sacred hymns at Balaji Mandir Charkop. Experience spiritual awakening and peace." />
+        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/images/12.webp" />
+        <meta property="og:site_name" content="Balaji Mandir Charkop" />
+        <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/mantra" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Daily Mantras - Balaji Mandir Charkop" />
+        <meta name="twitter:description" content="Chant daily mantras and sacred hymns at Balaji Mandir Charkop. Experience spiritual awakening and peace." />
+        <meta name="twitter:image" content="https://tirupatibalajitemplecharkop.com/images/12.webp" />
+        <meta name="theme-color" content="#eab308" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://tirupatibalajitemplecharkop.com/mantra" />
+        <link rel="icon" type="image/webp" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
       </Helmet>
       <div className="pt-16">
         <section className="py-16 bg-spiritual-beige">

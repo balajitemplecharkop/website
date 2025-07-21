@@ -82,20 +82,27 @@ export default function Home() {
         <meta name="description" content="Experience divine blessings at Balaji Mandir Charkop. Join us for daily Annadanam, temple seva, spiritual guidance, and community service. Serving devotees since 1998." />
         <meta property="og:title" content="Balaji Mandir Charkop - Spiritual Haven" />
         <meta property="og:description" content="Experience divine blessings at Balaji Mandir Charkop. Join us for daily Annadanam, temple seva, spiritual guidance, and community service. Serving devotees since 1998." />
-        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/wp-content/uploads/2025/01/12.webp" />
+        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/images/12.webp" />
+        <meta property="og:site_name" content="Balaji Mandir Charkop" />
+        <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Balaji Mandir Charkop - Spiritual Haven" />
         <meta name="twitter:description" content="Experience divine blessings at Balaji Mandir Charkop. Join us for daily Annadanam, temple seva, spiritual guidance, and community service. Serving devotees since 1998." />
-        <meta name="twitter:image" content="https://tirupatibalajitemplecharkop.com/wp-content/uploads/2025/01/12.webp" />
+        <meta name="twitter:image" content="https://tirupatibalajitemplecharkop.com/images/12.webp" />
+        <meta name="theme-color" content="#eab308" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://tirupatibalajitemplecharkop.com/" />
+        <link rel="icon" type="image/webp" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
             "@type": "HinduTemple",
             "name": "Balaji Mandir Charkop",
             "description": "Experience divine blessings at Balaji Mandir Charkop. Join us for daily Annadanam, temple seva, spiritual guidance, and community service. Serving devotees since 1998.",
-            "image": "https://tirupatibalajitemplecharkop.com/wp-content/uploads/2025/01/12.webp",
+            "image": "https://tirupatibalajitemplecharkop.com/images/12.webp",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Charkop, Kandivali West",
@@ -314,9 +321,11 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-deep-brown mb-2">Annadanam</h3>
                 <p className="text-deep-brown/80 mb-4">Support our daily food distribution program serving 500+ meals.</p>
+                <Link href="/annadanam" className="w-full">
                 <Button className="w-full bg-deep-saffron hover:bg-deep-saffron/90 text-white rounded-lg font-semibold py-3 shadow transition-all">
                   Contribute Now
                 </Button>
+                </Link>
               </Card>
               {/* Temple Seva */}
               <Card className="max-w-xs flex flex-col items-center text-center p-6 rounded-2xl border border-light-saffron shadow-md">
@@ -325,9 +334,11 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-deep-brown mb-2">Temple Seva</h3>
                 <p className="text-deep-brown/80 mb-4">Participate in sacred rituals and poojas for divine blessings.</p>
+                <Link href="/seva" className="w-full">
                 <Button className="w-full bg-peacock-green hover:bg-peacock-green/90 text-white rounded-lg font-semibold py-3 shadow transition-all">
                   Book Seva
                 </Button>
+                </Link>
               </Card>
               {/* Development */}
               <Card className="max-w-xs flex flex-col items-center text-center p-6 rounded-2xl border border-light-saffron shadow-md">
@@ -336,9 +347,11 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-deep-brown mb-2">Development</h3>
                 <p className="text-deep-brown/80 mb-4">Help expand and beautify our sacred temple infrastructure.</p>
+                <Link href="/development" className="w-full">
                 <Button variant="outline" className="w-full border-deep-saffron text-deep-saffron rounded-lg font-semibold py-3 shadow transition-all hover:bg-deep-saffron hover:text-white">
                   Support Project
                 </Button>
+                </Link>
               </Card>
               {/* Join Our Family */}
               <Card className="max-w-xs flex flex-col items-center text-center p-6 rounded-2xl border border-light-saffron shadow-md">
@@ -347,9 +360,11 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-deep-brown mb-2">Join Our Family</h3>
                 <p className="text-deep-brown/80 mb-4">Become a volunteer or join us with your unique skills to help serve the community and the divine mission.</p>
+                <Link href="/join-us" className="w-full">
                 <Button className="w-full bg-deep-saffron hover:bg-deep-saffron/90 text-white rounded-lg font-semibold py-3 shadow transition-all">
                   Join as Family
                 </Button>
+                </Link>
               </Card>
             </div>
             {/* Ways to Contribute Cards - Mobile */}
@@ -361,9 +376,11 @@ export default function Home() {
                     </div>
                 <h3 className="text-xl font-bold text-deep-brown mb-2">Annadanam</h3>
                 <p className="text-deep-brown/80 mb-4">Support our daily food distribution program serving 500+ meals.</p>
+                <Link href="/annadanam" className="w-full">
                 <Button className="w-full bg-deep-saffron hover:bg-deep-saffron/90 text-white rounded-lg font-semibold py-3 shadow transition-all">
                       Contribute Now
                     </Button>
+                </Link>
                 </Card>
               {/* Temple Seva Card */}
               <Card className="max-w-sm mx-auto p-6 rounded-2xl border border-light-saffron shadow-md flex flex-col items-center text-center">
@@ -372,9 +389,11 @@ export default function Home() {
                     </div>
                 <h3 className="text-xl font-bold text-deep-brown mb-2">Temple Seva</h3>
                 <p className="text-deep-brown/80 mb-4">Participate in sacred rituals and poojas for divine blessings.</p>
+                <Link href="/seva" className="w-full">
                 <Button className="w-full bg-peacock-green hover:bg-peacock-green/90 text-white rounded-lg font-semibold py-3 shadow transition-all">
                       Book Seva
                     </Button>
+                </Link>
                 </Card>
               {/* Development Card */}
               <Card className="max-w-sm mx-auto p-6 rounded-2xl border border-light-saffron shadow-md flex flex-col items-center text-center">
@@ -383,9 +402,11 @@ export default function Home() {
                     </div>
                 <h3 className="text-xl font-bold text-deep-brown mb-2">Development</h3>
                 <p className="text-deep-brown/80 mb-4">Help expand and beautify our sacred temple infrastructure.</p>
+                <Link href="/development" className="w-full">
                 <Button variant="outline" className="w-full border-deep-saffron text-deep-saffron rounded-lg font-semibold py-3 shadow transition-all hover:bg-deep-saffron hover:text-white">
                       Support Project
                     </Button>
+                </Link>
                 </Card>
               {/* Join Our Family Card */}
               <Card className="max-w-sm mx-auto p-6 rounded-2xl border border-light-saffron shadow-md flex flex-col items-center text-center">
@@ -394,9 +415,11 @@ export default function Home() {
                     </div>
                 <h3 className="text-xl font-bold text-deep-brown mb-2">Join Our Family</h3>
                 <p className="text-deep-brown/80 mb-4">Become a volunteer or join us with your unique skills to help serve the community and the divine mission.</p>
+                <Link href="/join-us" className="w-full">
                 <Button className="w-full bg-deep-saffron hover:bg-deep-saffron/90 text-white rounded-lg font-semibold py-3 shadow transition-all">
                       Join as Family
                     </Button>
+                </Link>
                 </Card>
             </div>
           </div>

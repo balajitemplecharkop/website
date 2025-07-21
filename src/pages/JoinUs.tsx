@@ -9,11 +9,23 @@ export default function JoinUs() {
     <>
       <Helmet>
         <title>Join Us - Balaji Mandir Charkop</title>
-        <meta name="description" content="Join the Balaji Mandir Charkop family. Volunteer, share your skills, or apply for open roles to help serve the community." />
+        <meta name="description" content="Become a volunteer or join the Balaji Mandir Charkop family. Serve the community and participate in our divine mission." />
         <meta property="og:title" content="Join Us - Balaji Mandir Charkop" />
-        <meta property="og:description" content="Join the Balaji Mandir Charkop family. Volunteer, share your skills, or apply for open roles to help serve the community." />
+        <meta property="og:description" content="Become a volunteer or join the Balaji Mandir Charkop family. Serve the community and participate in our divine mission." />
+        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <meta property="og:site_name" content="Balaji Mandir Charkop" />
+        <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/join-us" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Join Us - Balaji Mandir Charkop" />
+        <meta name="twitter:description" content="Become a volunteer or join the Balaji Mandir Charkop family. Serve the community and participate in our divine mission." />
+        <meta name="twitter:image" content="https://tirupatibalajitemplecharkop.com/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <meta name="theme-color" content="#eab308" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://tirupatibalajitemplecharkop.com/join-us" />
+        <link rel="icon" type="image/webp" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
       </Helmet>
       <div className="pt-20 pb-16 bg-white min-h-screen">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

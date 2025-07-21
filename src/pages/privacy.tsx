@@ -1,8 +1,29 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Helmet } from 'react-helmet-async';
 
 export default function Privacy() {
   return (
     <div className="pt-24 min-h-screen bg-white flex items-center justify-center">
+      <Helmet>
+        <title>Privacy Policy - Balaji Mandir Charkop</title>
+        <meta name="description" content="Read the privacy policy for Balaji Mandir Charkop. Learn how we protect your data and privacy." />
+        <meta property="og:title" content="Privacy Policy - Balaji Mandir Charkop" />
+        <meta property="og:description" content="Read the privacy policy for Balaji Mandir Charkop. Learn how we protect your data and privacy." />
+        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <meta property="og:site_name" content="Balaji Mandir Charkop" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/privacy" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Privacy Policy - Balaji Mandir Charkop" />
+        <meta name="twitter:description" content="Read the privacy policy for Balaji Mandir Charkop. Learn how we protect your data and privacy." />
+        <meta name="twitter:image" content="https://tirupatibalajitemplecharkop.com/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <meta name="theme-color" content="#eab308" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://tirupatibalajitemplechokop.com/privacy" />
+        <link rel="icon" type="image/webp" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+      </Helmet>
       <Card className="max-w-2xl w-full mx-4">
         <CardContent className="py-8 px-6 space-y-4">
           <h1 className="text-3xl font-bold text-deep-brown mb-4">Privacy Policy</h1>

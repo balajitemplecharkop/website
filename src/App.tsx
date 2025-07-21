@@ -28,6 +28,7 @@ const Refund = lazy(() => import("@/pages/refund"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 const Mantra = lazy(() => import("@/pages/Mantra"));
 const ThankYou = lazy(() => import("@/pages/ThankYou"));
+const Contact = lazy(() => import("@/pages/Contact"));
 
 function usePageTracking() {
   const [location] = useLocation();
@@ -102,6 +103,11 @@ function Router() {
         <Route path="/thank-you" component={() => (
           <Suspense fallback={<div>Loading...</div>}>
             <ThankYou />
+          </Suspense>
+        )} />
+        <Route path="/contact" component={() => (
+          <Suspense fallback={<div>Loading Contact...</div>}>
+            <Contact />
           </Suspense>
         )} />
         <Route component={() => (

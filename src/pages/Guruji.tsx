@@ -28,9 +28,20 @@ export default function Guruji() {
         <meta name="description" content="Discover the spiritual journey and teachings of Guruji at Balaji Mandir Charkop. Learn about his life, miracles, and service to the community." />
         <meta property="og:title" content="Our Guruji - Balaji Mandir Charkop" />
         <meta property="og:description" content="Discover the spiritual journey and teachings of Guruji at Balaji Mandir Charkop. Learn about his life, miracles, and service to the community." />
+        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/images/Bhajan-Yajamaan.webp" />
+        <meta property="og:site_name" content="Balaji Mandir Charkop" />
+        <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/guruji" />
-        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/wp-content/uploads/2024/07/Bhajan-Yajamaan.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Guruji - Balaji Mandir Charkop" />
+        <meta name="twitter:description" content="Discover the spiritual journey and teachings of Guruji at Balaji Mandir Charkop. Learn about his life, miracles, and service to the community." />
+        <meta name="twitter:image" content="https://tirupatibalajitemplecharkop.com/images/Bhajan-Yajamaan.webp" />
+        <meta name="theme-color" content="#eab308" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://tirupatibalajitemplecharkop.com/guruji" />
+        <link rel="icon" type="image/webp" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
       </Helmet>
       <div className="pt-16">
         <section className="py-16 bg-spiritual-beige">

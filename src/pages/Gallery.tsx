@@ -52,12 +52,23 @@ export default function Gallery() {
     <>
       <Helmet>
         <title>Gallery - Balaji Mandir Charkop</title>
-        <meta name="description" content="View the gallery of Balaji Mandir Charkop. Explore sacred moments, festivals, and daily rituals through beautiful images." />
+        <meta name="description" content="Explore the gallery of Balaji Mandir Charkop. View photos of festivals, rituals, and sacred moments." />
         <meta property="og:title" content="Gallery - Balaji Mandir Charkop" />
-        <meta property="og:description" content="View the gallery of Balaji Mandir Charkop. Explore sacred moments, festivals, and daily rituals through beautiful images." />
+        <meta property="og:description" content="Explore the gallery of Balaji Mandir Charkop. View photos of festivals, rituals, and sacred moments." />
+        <meta property="og:image" content="https://tirupatibalajitemplecharkop.com/images/13.webp" />
+        <meta property="og:site_name" content="Balaji Mandir Charkop" />
+        <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tirupatibalajitemplecharkop.com/gallery" />
-        <meta property="og:image" content="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Gallery - Balaji Mandir Charkop" />
+        <meta name="twitter:description" content="Explore the gallery of Balaji Mandir Charkop. View photos of festivals, rituals, and sacred moments." />
+        <meta name="twitter:image" content="https://tirupatibalajitemplecharkop.com/images/13.webp" />
+        <meta name="theme-color" content="#eab308" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://tirupatibalajitemplecharkop.com/gallery" />
+        <link rel="icon" type="image/webp" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
       </Helmet>
       {/* Ensure images in GalleryLightbox are optimized with loading="lazy" and width/height attributes. */}
       <div className="pt-16">
