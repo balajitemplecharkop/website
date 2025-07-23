@@ -198,9 +198,17 @@ export default function TempleDevelopment() {
                     <div className="text-peacock-green text-sm font-semibold mb-4">
                       ₹{project.raised.toLocaleString()} raised of ₹{project.target.toLocaleString()} target
                     </div>
-                    <Button className="w-full bg-peacock-green text-white py-3 rounded-xl font-semibold shadow-spiritual hover:bg-peacock-green/90 transition">
-                      Contribute
-                    </Button>
+                    {project.contributeUrl && (
+  <Button
+    asChild
+    className="w-full bg-peacock-green text-white py-3 rounded-xl font-semibold shadow-spiritual hover:bg-peacock-green/90 transition"
+  >
+    <a href={project.contributeUrl} target="_blank" rel="noopener noreferrer">
+      Contribute
+    </a>
+  </Button>
+)}
+
                   </Card>
                 ))}
               </div>

@@ -2,29 +2,29 @@
   "volunteerRoles": [
     {
       "id": "event-volunteer",
-      "title": "Event Volunteer",
-      "description": "Help organize and manage temple events, festivals, and community programs.",
+      "title": "Festival Coordinator",
+      "description": "Coordinate decorations, rituals, and logistics during religious festivals and cultural programs.",
       "skills": ["Organization", "Teamwork", "Communication"]
     },
     {
       "id": "teaching-volunteer",
-      "title": "Teaching Volunteer",
-      "description": "Conduct classes or workshops for children and adults (music, art, language, etc.).",
+      "title": "Cultural Instructor",
+      "description": "Lead sessions on devotional singing, storytelling, or traditional dance for children and youth.",
       "skills": ["Teaching", "Creativity", "Patience"]
     }
   ],
   "jobPostings": [
     {
-      "id": "admin-assistant",
-      "title": "Administrative Assistant",
-      "description": "Assist with daily temple administration, record keeping, and communication.",
-      "requirements": ["Basic computer skills", "Fluent in English/Hindi/Marathi"]
+      "id": "technical-assistant",
+      "title": "Technical Assistant",
+      "description": "Assist with daily tech operations,drafting daily tech reports, and communication with Tech Team.",
+      "requirements": ["Highly proficient in computer skills", "Fluent in English/Hindi/Marathi"]
     },
     {
-      "id": "social-media-manager",
-      "title": "Social Media Manager",
-      "description": "Manage temple's social media presence, create posts, and engage with the community online.",
-      "requirements": ["Experience with social media", "Content creation skills"]
+      "id": "Offline-media-manager",
+      "title": "Offline Print Media Manager",
+      "description": "Manage temple's offline media presence, create banners, and engage with the community offline.",
+      "requirements": ["Experience with print media", "Adobe Creative Suite"]
     }
   ]
-} 
+}
