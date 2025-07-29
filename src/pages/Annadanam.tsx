@@ -211,13 +211,13 @@ export default function Annadanam() {
                   <div className="w-full lg:w-auto mb-2 lg:mb-4">
                     <div className="text-center lg:text-left text-deep-brown/70 text-sm mb-2">Want to support Annadanam every month?</div>
                     <a
-                      href="https://forms.gle/your-google-form-link"
+                      href="/recurring-donation"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-full lg:w-auto"
                     >
                       <button className="bg-light-saffron text-deep-brown px-8 py-3 rounded-xl font-semibold hover:bg-deep-saffron hover:text-white transition w-full lg:w-auto text-lg">
-                        Interested in Monthly Recurring Annadanam? Click here
+                        Set Up a Monthly Annadanam Donation
                       </button>
                     </a>
                   </div>

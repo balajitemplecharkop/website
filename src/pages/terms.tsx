@@ -59,7 +59,7 @@ export default function Terms() {
             <h2 className="text-xl font-semibold text-deep-brown mt-6 mb-2">8. Changes to Terms</h2>
             <p className="text-deep-brown/70">The Trust may revise these terms at any time by updating this page. Please check this page regularly to ensure you are aware of any changes.</p>
 
-            <p className="text-deep-brown/60 text-xs mt-6">For any queries regarding these terms, please contact us at info@balajimandir.org.</p>
+            <p className="text-deep-brown/60 text-xs mt-6">For any queries regarding these terms, please contact us at support@tirupatibalajitemplecharkop.com</p>
           </CardContent>
         </Card>
       </div>

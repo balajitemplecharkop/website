@@ -71,7 +71,7 @@ export default function Privacy() {
           <p className="text-deep-brown/70">In accordance with the Information Technology Act, 2000 and rules made thereunder, the name and contact details of the Grievance Officer are:<br />
             <span className="font-semibold">Grievance Officer</span><br />
             Shree Balaji Padmavati Foundation<br />
-            Email: info@balajimandir.org<br />
+            Email: support@tirupatibalajitemplecharkop.com<br />
             Mumbai, Maharashtra, India
           </p>
 

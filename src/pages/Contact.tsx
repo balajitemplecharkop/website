@@ -60,7 +60,7 @@ export default function Contact() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-deep-saffron flex-shrink-0" />
-                <span className="text-deep-brown/80">charkopbalaji1@gmail.com</span>
+                <span className="text-deep-brown/80">contact@tirupatibalajitemplecharkop.com</span>
               </div>
             </div>
           </CardContent>

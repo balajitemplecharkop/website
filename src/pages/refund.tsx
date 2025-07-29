@@ -39,7 +39,7 @@ export default function Refund() {
 
           <h2 className="text-xl font-semibold text-deep-brown mt-6 mb-2">2. Requesting a Refund</h2>
           <ul className="list-disc ml-6 text-deep-brown/70 space-y-1">
-            <li>To request a refund, please email <span className="font-semibold">info@balajimandir.org</span> within 7 days of the donation, stating the reason for the request and providing the following details:
+            <li>To request a refund, please email <span className="font-semibold">support@tirupatibalajitemplecharkop.com</span> within 7 days of the donation, stating the reason for the request and providing the following details:
               <ul className="list-disc ml-6">
                 <li>Date and amount of donation</li>
                 <li>Transaction ID or payment reference</li>
@@ -65,7 +65,7 @@ export default function Refund() {
           <h2 className="text-xl font-semibold text-deep-brown mt-6 mb-2">5. Contact</h2>
           <p className="text-deep-brown/70">For any queries regarding this policy, please contact:<br />
             <span className="font-semibold">Shree Balaji Padmavati Foundation</span><br />
-            Email: info@balajimandir.org<br />
+            Email: support@tirupatibalajitemplecharkop.com<br />
             Mumbai, Maharashtra, India
           </p>
 

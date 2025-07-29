@@ -2,13 +2,13 @@
   {
     "id": "swayamvara-pooja",
     "name": "Swayamvara Pooja",
-    "price": 11,
+    "price": 501,
     "description": "Special prayers for finding the right life partner",
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "45 MIN",
-    "benefits": ["Finding suitable partner", "Marital harmony", "Divine blessings"],
-    "special": "FREE"
+    "paymentLink": "https://rzp.io/rzp/swayamvarapooja" ,
+    "benefits": ["Finding suitable partner", "Marital harmony", "Divine blessings"]
   },
   {
     "id": "annadanam",
@@ -18,6 +18,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "Daily Service",
+    "paymentLink": "https://rzp.io/rzp/252Annadanam" ,
     "benefits": ["Feeding the hungry", "Spiritual merit", "Community service"]
   },
   {
@@ -28,6 +29,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Venkateshwara",
     "duration": "30 MIN",
+    "paymentLink": "https://rzp.io/rzp/venkateshwara-archana" ,
     "benefits": ["Divine blessings", "Prosperity", "Spiritual growth"]
   },
   {
@@ -38,6 +40,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Goddess Padmavati",
     "duration": "30 MIN",
+    "paymentLink": "https://rzp.io/rzp/padmavati-archana" ,
     "benefits": ["Wealth and prosperity", "Family welfare", "Divine grace"]
   },
   {
@@ -48,6 +51,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Garuda",
     "duration": "25 MIN",
+    "paymentLink": "https://rzp.io/rzp/garuda-seva" ,
     "benefits": ["Protection", "Swift solutions", "Divine intervention"]
   },
   {
@@ -58,6 +62,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji & Padmavati",
     "duration": "45 MIN",
+    "paymentLink": "https://rzp.io/rzp/special-archana-balaji-padmava" ,
     "benefits": ["Complete blessings", "Prosperity and peace", "Divine couple's grace"]
   },
   {
@@ -68,6 +73,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "15 MIN",
+    "paymentLink": "https://rzp.io/rzp/oil-offering" ,
     "benefits": ["Divine light", "Spiritual illumination", "Prosperity"]
   },
   {
@@ -78,6 +84,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "60 MIN",
+    "paymentLink": "https://rzp.io/rzp/Namakaranam-SBPF" ,
     "benefits": ["Auspicious naming", "Child's wellbeing", "Divine protection"]
   },
   {
@@ -88,6 +95,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "30 MIN",
+    "paymentLink": "https://rzp.io/rzp/ekanta-seva" ,
     "benefits": ["Personal divine connection", "Exclusive blessings", "Spiritual intimacy"]
   },
   {
@@ -98,6 +106,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "20 MIN",
+    "paymentLink": "https://rzp.io/rzp/tulasi-mala" ,
     "benefits": ["Devotional offering", "Spiritual purification", "Divine fragrance"]
   },
   {
@@ -108,6 +117,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "30 MIN",
+    "paymentLink": "https://rzp.io/rzp/suprabhata-seva" ,
     "benefits": ["Divine awakening", "Auspicious start", "Morning blessings"]
   },
   {
@@ -118,6 +128,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Utsavar",
     "duration": "Daily decoration",
+    "paymentLink": "https://rzp.io/rzp/flowers-utsavar" ,
     "benefits": ["Divine beauty", "Aromatic blessings", "Visual devotion"]
   },
   {
@@ -128,6 +139,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "45 MIN",
+    "paymentLink": "https://rzp.io/rzp/vahan-pooja-2wheeler" ,
     "benefits": ["Safe travels", "Vehicle protection", "Journey blessings"]
   },
   {
@@ -138,6 +150,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "60 MIN",
+    "paymentLink": "https://rzp.io/rzp/bhajan-yajamaan" ,
     "benefits": ["Devotional music", "Community participation", "Divine melody"]
   },
   {
@@ -148,6 +161,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Venkateshwara",
     "duration": "90 MIN",
+    "paymentLink": "https://rzp.io/rzp/venkateshwara-sahasranama" ,
     "benefits": ["Divine names power", "Spiritual merit", "Complete blessings"]
   },
   {
@@ -158,6 +172,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Goddess Lakshmi",
     "duration": "90 MIN",
+    "paymentLink": "https://rzp.io/rzp/mahalaxmi-sahasranama" ,
     "benefits": ["Wealth and prosperity", "Divine grace", "Material abundance"]
   },
   {
@@ -168,6 +183,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "30 MIN",
+    "paymentLink": "https://rzp.io/l/nithya-seva" ,
     "benefits": ["Divine adornment", "Sacred clothing", "Royal treatment"]
   },
   {
@@ -178,6 +194,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Utsavar",
     "duration": "60 MIN",
+    "paymentLink": "https://rzp.io/rzp/abhishekam-utsavar-friday" ,
     "benefits": ["Divine bathing", "Purification", "Friday blessings"]
   },
   {
@@ -188,6 +205,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "Service",
+    "paymentLink": "https://rzp.io/rzp/srivari-seva" ,
     "benefits": ["Seva merit", "Temple sanctity", "Divine service"]
   },
   {
@@ -198,6 +216,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "45 MIN",
+    "paymentLink": "https://rzp.io/rzp/hair-offering" ,
     "benefits": ["Devotional sacrifice", "Spiritual purification", "Divine surrender"]
   },
   {
@@ -208,6 +227,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "30 MIN",
+    "paymentLink": "https://rzp.io/rzp/kalyana-mala" ,
     "benefits": ["Divine marriage blessings", "Marital harmony", "Sacred union"]
   },
   {
@@ -218,6 +238,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "60 MIN",
+    "paymentLink": "https://rzp.io/rzp/vahan-pooja-4wheeler" ,
     "benefits": ["Safe travels", "Vehicle protection", "Journey blessings"]
   },
   {
@@ -228,6 +249,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
       "duration": "75 MIN",
+      "paymentLink": "https://rzp.io/rzp/annaprasanam" ,
     "benefits": ["Child's health", "Proper growth", "Divine nourishment"]
   },
   {
@@ -238,6 +260,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "90 MIN",
+    "paymentLink": "https://rzp.io/rzp/abhishekam-balaji" ,
     "benefits": ["Divine purification", "Complete blessings", "Spiritual cleansing"]
   },
   {
@@ -248,6 +271,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "Distribution",
+    "paymentLink": "https://rzp.io/rzp/prasadam-SBPF" ,
     "benefits": ["Divine grace", "Blessed food", "Spiritual nourishment"]
   },
   {
@@ -258,6 +282,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Santana Gopala Krishna",
     "duration": "120 MIN",
+    "paymentLink": "hhttps://rzp.io/rzp/santana-gopala" ,
     "benefits": ["Child blessings", "Fertility", "Progeny protection"]
   },
   {
@@ -268,6 +293,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "Full day service",
+    "paymentLink": "https://rzp.io/rzp/saturday-annadanam" ,
     "benefits": ["Mass feeding", "Community service", "Spiritual merit"]
   },
   {
@@ -278,6 +304,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "Special day service",
+    "paymentLink": "https://rzp.io/rzp/balabhojanam" ,
     "benefits": ["Children's welfare", "Community bonding", "Divine blessings"]
   },
   {
@@ -288,6 +315,7 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=2000",
     "deity": "Lord Balaji",
     "duration": "Special day service",
+    "paymentLink": "https://rzp.io/rzp/bramhanbhojan" ,
     "benefits": ["Brahmin blessings", "Spiritual merit", "Ancestral peace"]
   },
   {
@@ -298,16 +326,18 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "Memorial service",
+    "paymentLink": "https://rzp.io/rzp/special-annadanam-memory" ,
     "benefits": ["Soul peace", "Memorial service", "Ancestral blessings"]
   },
   {
     "id": "tulabharam",
     "name": "Tulabharam",
-    "price": 11,
+    "price": 3001,
     "description": "Offering equivalent to body weight in sacred materials",
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "As required",
+    "paymentLink": "https://rzp.io/rzp/tulabharam" ,
     "benefits": ["Complete surrender", "Proportional offering", "Divine weighing"],
     "special": "As per weight"
   },
@@ -319,28 +349,31 @@
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "As required",
+    "paymentLink": "https://rzp.io/rzp/pooja-samagri-SBPF" ,
     "benefits": ["Worship materials", "Sacred offerings", "Divine tools"],
     "special": "As per wish"
   },
   {
     "id": "nithya-seva",
     "name": "Nithya Seva",
-    "price": 11,
+    "price": 5001,
     "description": "Daily ongoing service to the deity",
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji",
     "duration": "Daily service",
+    "paymentLink": "https://rzp.io/rzp/nithya-seva" ,
     "benefits": ["Continuous blessings", "Daily devotion", "Ongoing seva"],
     "special": "As per wish"
   },
   {
     "id": "kalyana-utsavam",
     "name": "Kalyana Utsavam",
-    "price": 11,
+    "price": 3001,
     "description": "Divine marriage ceremony of the deities",
     "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200",
     "deity": "Lord Balaji & Padmavati",
     "duration": "Grand celebration",
+    "paymentLink": "https://rzp.io/l/nithya-seva" ,
     "benefits": ["Divine marriage blessings", "Marital harmony", "Grand celebration"],
     "special": "As per wish"
   }

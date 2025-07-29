@@ -112,7 +112,7 @@ export default function SevaDetails() {
                 </div>
                 <p className="text-deep-brown/80 text-base leading-relaxed max-w-xl mb-2 md:mb-6">{pooja.description}</p>
                 <a
-                  href={`https://rzp.io/l/your-link-for-${pooja.id}`}
+                  href={pooja.paymentLink || "#"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full md:w-auto"

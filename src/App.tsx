@@ -11,6 +11,7 @@ import Seva from "@/pages/Seva";
 import SevaDetails from "@/pages/SevaDetails";
 import TempleDevelopment from "@/pages/TempleDevelopment";
 import Guruji from "@/pages/Guruji";
+import shipping from "@/pages/shipping";
 import { HelmetProvider } from 'react-helmet-async';
 import { Helmet } from 'react-helmet-async';
 import { Suspense, lazy } from "react";
@@ -29,7 +30,9 @@ const NotFound = lazy(() => import("@/pages/not-found"));
 const Mantra = lazy(() => import("@/pages/Mantra"));
 const ThankYou = lazy(() => import("@/pages/ThankYou"));
 const Contact = lazy(() => import("@/pages/Contact"));
-
+const Shipping = lazy(() => import("@/pages/shipping"));
+const RecurringDonation = lazy(() => import("@/pages/RecurringDonation"));
+const RecurringDonationSuccess = lazy(() => import("@/pages/RecurringDonationSuccess"));
 function usePageTracking() {
   const [location] = useLocation();
   useEffect(() => {
@@ -90,6 +93,12 @@ function Router() {
             <Terms />
           </Suspense>
         )} />
+        <Route path="/shipping" component={() => (
+           <Suspense fallback={<div>Loading Shipping Policy...</div>}>
+         <Shipping />
+          </Suspense>
+           )} />
+
         <Route path="/privacy" component={() => (
           <Suspense fallback={<div>Loading Privacy...</div>}>
             <Privacy />
@@ -108,6 +117,16 @@ function Router() {
         <Route path="/contact" component={() => (
           <Suspense fallback={<div>Loading Contact...</div>}>
             <Contact />
+          </Suspense>
+        )} />
+        <Route path="/recurring-donation" component={() => (
+          <Suspense fallback={<div>Loading Recurring Donation...</div>}>
+            <RecurringDonation />
+          </Suspense>
+        )} />
+        <Route path="/recurring-donation-success" component={() => (
+          <Suspense fallback={<div>Loading Success...</div>}>
+            <RecurringDonationSuccess />
           </Suspense>
         )} />
         <Route component={() => (

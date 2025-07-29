@@ -11,6 +11,7 @@ export default function Footer() {
     { path: "/terms", label: "Terms & Conditions" },
     { path: "/privacy", label: "Privacy Policy" },
     { path: "/refund", label: "Cancellation & Refund Policy" },
+    { path: "/shipping", label: "Shipping & Exchange Policy" },
     { path: "/contact", label: "Contact Us" },
   ];
 
@@ -20,6 +21,8 @@ export default function Footer() {
     { path: "/mantra", label: "Mantras" },
     { path: "/calendar", label: "Events" },
   ];
+  const currentYear = new Date().getFullYear();
+
 
   return (
     <footer className="bg-deep-brown text-white relative overflow-hidden">
@@ -78,7 +81,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-deep-saffron flex-shrink-0" />
-                <span className="text-white/80">charkopbalaji1@gmail.com</span>
+                <span className="text-white/80">contact@tirupatibalajitemplecharkop.com</span>
               </div>
               <div className="flex items-start space-x-2">
                 <Clock className="h-4 w-4 text-deep-saffron mt-0.5 flex-shrink-0" />
@@ -94,8 +97,7 @@ export default function Footer() {
         <div className="border-t border-white/20 mt-10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-white/70 text-sm">
-              © 2025 <span className="font-semibold text-white">Shree Balaji Padmavati Foundation</span>. All rights reserved.<br />
-              Trust & Website Owner
+              © {currentYear} <span className="font-semibold text-white">Shree Balaji Padmavati Foundation</span>. All rights reserved.
             </div>
             <div className="flex items-center space-x-2 text-white/70 text-sm">
               <span>Made with</span>
