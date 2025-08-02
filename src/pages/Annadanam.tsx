@@ -13,15 +13,15 @@ export default function Annadanam() {
   // Placeholder images for the carousel
   const galleryImages = [
     {
-      src: "/images/Yf8TILpvKPd6ZUye.webp",
+      src: "/images/balabhojnam.webp",
       alt: "Annadanam food distribution at Balaji Mandir Charkop - main gallery image"
     },
     {
-      src: "/images/photo-1578662996442-48f60103fc96.webp",
+      src: "/images/prasadam.webp",
       alt: "Temple volunteers preparing Annadanam meals"
     },
     {
-      src: "/images/photo-1545558014-8692077e9b5c.webp",
+      src: "/images/specialannadanam.webp",
       alt: "Devotees enjoying Annadanam at Balaji Mandir Charkop"
     }
   ];
@@ -178,7 +178,7 @@ export default function Annadanam() {
                 {/* Image */}
                 <div className="bg-cream flex-shrink-0 w-full lg:w-1/2 h-56 sm:h-72 lg:h-auto lg:min-h-[320px]">
                   <img
-                    src="/images/Yf8TILpvKPd6ZUye.webp"
+                    src="/images/balabhojnam.webp"
                     alt="Annadanam food distribution at Balaji Mandir Charkop - main gallery image"
                     className="w-full h-full object-cover rounded-none lg:rounded-none"
                     loading="eager"
@@ -198,7 +198,7 @@ export default function Annadanam() {
                   </div>
                   <p className="text-deep-brown/80 text-base leading-relaxed max-w-xl mb-2 lg:mb-6">"Annam Brahma" - Food is divine. Support our daily food distribution program and be part of this sacred service.</p>
                   <a
-                    href="https://rzp.io/l/your-annadanam-link"
+                    href="https://rzp.io/rzp/252Annadanam"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full lg:w-auto"
@@ -284,7 +284,7 @@ export default function Annadanam() {
               {/* SEO Description Block */}
               <div className="mb-14 max-w-4xl mx-auto animate-fade-in-up">
                 <div className="bg-white rounded-2xl shadow-spiritual p-4 sm:p-6 text-deep-brown/90 text-base leading-relaxed">
-                  <h3 className="text-lg font-bold text-deep-brown mb-2">About Annadanam (SEO)</h3>
+                  <h3 className="text-lg font-bold text-deep-brown mb-2">About Annadanam</h3>
                   <p>{seoDescription}</p>
                 </div>
               </div>

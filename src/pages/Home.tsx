@@ -96,6 +96,15 @@ export default function Home() {
         <link rel="canonical" href="https://tirupatibalajitemplecharkop.com/" />
         <link rel="icon" type="image/webp" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
         <link rel="apple-touch-icon" sizes="180x180" href="/images/pngtree-balaji-tilak-png-image_6538668.webp" />
+        <link
+  rel="preload"
+  as="image"
+  href="/images/12.webp"
+  imageSizes="100vw"
+  type="image/webp"
+/>
+
+
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
@@ -134,8 +143,8 @@ export default function Home() {
                       src={slide.image}
                       alt={slide.title}
                       className="w-full h-full object-cover"
-                      width="1920"
-                      height="900"
+                      width="960"
+                      height="450"
                       {...(index !== 0 ? { loading: "lazy" } : {})}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>

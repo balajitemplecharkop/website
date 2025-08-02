@@ -1,0 +1,17 @@
+[
+  {
+    "id": "EMP001",
+    "email": "employee1@example.com",
+    "password": "password123"
+  },
+  {
+    "id": "EMP002",
+    "email": "employee2@example.com",
+    "password": "securepass456"
+  },
+  {
+    "id": "EMP003",
+    "email": "employee3@example.com",
+    "password": "letmein789"
+  }
+] 

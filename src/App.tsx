@@ -18,6 +18,9 @@ import { Suspense, lazy } from "react";
 import { useEffect, useState } from "react";
 import ReactGA from "react-ga4";
 import { useLocation } from "wouter";
+// In your main.tsx or index.tsx
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 // Lazy load large, non-critical pages
 const Gallery = lazy(() => import("@/pages/Gallery"));
@@ -38,6 +41,10 @@ function usePageTracking() {
   useEffect(() => {
     ReactGA.send({ hitType: "pageview", page: location });
   }, [location]);
+}
+
+function getUser() {
+  return JSON.parse(localStorage.getItem('user') || 'null');
 }
 
 function Router() {
@@ -61,80 +68,84 @@ function Router() {
   return (
     <div className="min-h-screen bg-spiritual-beige overflow-x-hidden">
       <Navbar />
-      <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/annadanam" component={Annadanam} />
-        <Route path="/seva" component={Seva} />
-        <Route path="/seva/:id" component={SevaDetails} />
-        <Route path="/development" component={TempleDevelopment} />
-        <Route path="/guruji" component={Guruji} />
-        <Route path="/gallery" component={() => (
-          <Suspense fallback={<div>Loading Gallery...</div>}>
-            <Gallery />
-          </Suspense>
-        )} />
-        <Route path="/mantra" component={() => (
-          <Suspense fallback={<div>Loading Mantra...</div>}>
-            <Mantra />
-          </Suspense>
-        )} />
-        <Route path="/calendar" component={() => (
-          <Suspense fallback={<div>Loading Calendar...</div>}>
-            <Calendar />
-          </Suspense>
-        )} />
-        <Route path="/join-us" component={() => (
-          <Suspense fallback={<div>Loading Join Us...</div>}>
-            <JoinUs />
-          </Suspense>
-        )} />
-        <Route path="/terms" component={() => (
-          <Suspense fallback={<div>Loading Terms...</div>}>
-            <Terms />
-          </Suspense>
-        )} />
-        <Route path="/shipping" component={() => (
-           <Suspense fallback={<div>Loading Shipping Policy...</div>}>
-         <Shipping />
-          </Suspense>
-           )} />
+     <Switch>
+  <Route path="/" component={Home} />
+  <Route path="/annadanam" component={Annadanam} />
+  <Route path="/seva" component={Seva} />
+  <Route path="/seva/:id" component={SevaDetails} />
+  <Route path="/development" component={TempleDevelopment} />
+  <Route path="/guruji" component={Guruji} />
+  <Route path="/gallery" component={() => (
+    <Suspense fallback={<div>Loading Gallery...</div>}>
+      <Gallery />
+    </Suspense>
+  )} />
+  <Route path="/mantra" component={() => (
+    <Suspense fallback={<div>Loading Mantra...</div>}>
+      <Mantra />
+    </Suspense>
+  )} />
+  <Route path="/calendar" component={() => (
+    <Suspense fallback={<div>Loading Calendar...</div>}>
+      <Calendar />
+    </Suspense>
+  )} />
+  <Route path="/join-us" component={() => (
+    <Suspense fallback={<div>Loading Join Us...</div>}>
+      <JoinUs />
+    </Suspense>
+  )} />
+  <Route path="/terms" component={() => (
+    <Suspense fallback={<div>Loading Terms...</div>}>
+      <Terms />
+    </Suspense>
+  )} />
+  <Route path="/shipping" component={() => (
+    <Suspense fallback={<div>Loading Shipping Policy...</div>}>
+      <Shipping />
+    </Suspense>
+  )} />
+  <Route path="/privacy" component={() => (
+    <Suspense fallback={<div>Loading Privacy...</div>}>
+      <Privacy />
+    </Suspense>
+  )} />
+  <Route path="/refund" component={() => (
+    <Suspense fallback={<div>Loading Refund...</div>}>
+      <Refund />
+    </Suspense>
+  )} />
+  <Route path="/thank-you" component={() => (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ThankYou />
+    </Suspense>
+  )} />
+  <Route path="/contact" component={() => (
+    <Suspense fallback={<div>Loading Contact...</div>}>
+      <Contact />
+    </Suspense>
+  )} />
+  <Route path="/recurring-donation" component={() => (
+    <Suspense fallback={<div>Loading Recurring Donation...</div>}>
+      <RecurringDonation />
+    </Suspense>
+  )} />
+  <Route path="/recurring-donation-success" component={() => (
+    <Suspense fallback={<div>Loading Success...</div>}>
+      <RecurringDonationSuccess />
+    </Suspense>
+  )} />
 
-        <Route path="/privacy" component={() => (
-          <Suspense fallback={<div>Loading Privacy...</div>}>
-            <Privacy />
-          </Suspense>
-        )} />
-        <Route path="/refund" component={() => (
-          <Suspense fallback={<div>Loading Refund...</div>}>
-            <Refund />
-          </Suspense>
-        )} />
-        <Route path="/thank-you" component={() => (
-          <Suspense fallback={<div>Loading...</div>}>
-            <ThankYou />
-          </Suspense>
-        )} />
-        <Route path="/contact" component={() => (
-          <Suspense fallback={<div>Loading Contact...</div>}>
-            <Contact />
-          </Suspense>
-        )} />
-        <Route path="/recurring-donation" component={() => (
-          <Suspense fallback={<div>Loading Recurring Donation...</div>}>
-            <RecurringDonation />
-          </Suspense>
-        )} />
-        <Route path="/recurring-donation-success" component={() => (
-          <Suspense fallback={<div>Loading Success...</div>}>
-            <RecurringDonationSuccess />
-          </Suspense>
-        )} />
-        <Route component={() => (
-          <Suspense fallback={<div>Loading...</div>}>
-            <NotFound />
-          </Suspense>
-        )} />
-      </Switch>
+  {/* ✅ Final catch-all route for unmatched paths */}
+  <Route>
+    {() => (
+      <Suspense fallback={<div>Loading Not Found...</div>}>
+        <NotFound />
+      </Suspense>
+    )}
+  </Route>
+</Switch>
+
       <Footer />
       {/* Cookie Consent Banner */}
       {showCookieBanner && (

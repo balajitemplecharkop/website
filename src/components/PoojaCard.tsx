@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 interface PoojaItem {
   id: string;
@@ -18,7 +19,7 @@ interface PoojaCardProps {
 }
 
 export default function PoojaCard({ pooja }: PoojaCardProps) {
-  // Remove duration from description if present at the end
+  const [loaded, setLoaded] = useState(false);// Remove duration from description if present at the end
   let cleanDescription = pooja.description;
   if (
     pooja.duration &&
@@ -30,15 +31,19 @@ export default function PoojaCard({ pooja }: PoojaCardProps) {
   const durationText = pooja.duration ? pooja.duration.toUpperCase() : "";
   return (
     <Card className="bg-white shadow-spiritual hover:shadow-spiritual-hover transition-spiritual overflow-hidden group">
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden aspect-[4/3] bg-spiritual-beige">
         <img
           src={pooja.image}
           alt={`${pooja.name} ritual setup`}
-          className="w-full h-48 object-cover group-hover:scale-105 transition-spiritual"
+          loading="lazy"
+          decoding="async"
+          width={400}
+          height={300}
+          onLoad={() => setLoaded(true)} // 👈 fade-in trigger
+          className={`w-full h-full object-cover transition-all duration-700 ease-in-out ${
+            loaded ? "opacity-100 blur-0 scale-100" : "opacity-0 blur-md scale-105"
+          }`}
         />
-        <div className="absolute top-3 right-3 bg-deep-saffron text-white px-3 py-1 rounded-full text-sm font-semibold">
-          ₹{pooja.price.toLocaleString()}
-        </div>
       </div>
       <CardContent className="p-6">
         <div className="space-y-2">
