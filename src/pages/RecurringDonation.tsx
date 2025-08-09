@@ -8,12 +8,12 @@ import { Lock, Heart, User, Mail, Phone, Check } from "lucide-react";
 
 // Map donation amounts to Razorpay plan_ids (replace with your actual plan_ids)
 const PLAN_ID_MAP: Record<string, string> = {
-  '252': 'plan_QyTXjTnTIcHXVA',
-  '504': 'plan_QyTYLgfwXLoGUy',
-  '1008': 'plan_QyTZ8Uud9lUyPF',
-  '2016': 'plan_QyTZrXSRTmiEyP',
-  '4032': 'plan_QyTaVmqsigcfHd',
-  '8064': 'plan_QyTb06x5uH2um3',
+  '252': 'plan_R3BzPZSb9P7CWX',
+  '504': 'plan_R3Bzf4X6xNdfFx',
+  '1008': 'plan_R3C049r9N74beK',
+  '2016': 'plan_R3C0GnTM9JJUI6',
+  '4032': 'plan_R3C0cEO9KCeVXy',
+  '8064': 'plan_R3C0pqf9JOSFPY',
 };
 
 export default function RecurringDonation() {
@@ -72,7 +72,7 @@ export default function RecurringDonation() {
         });
       }
       const options = {
-        key: 'rzp_test_tcBLMcyRdp7UW6', // Replace with your Razorpay key
+        key: 'rzp_live_To0r9kQB9cu7Oa', // Replace with your Razorpay key
         subscription_id: data.id,
         name: 'Shree Balaji Padmavati Foundation',
         description: 'Recurring Donation',
