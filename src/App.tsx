@@ -20,6 +20,7 @@ import ReactGA from "react-ga4";
 import { useLocation } from "wouter";
 // In your main.tsx or index.tsx
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import RecurringDonationFailure from "./pages/ReccuringDonationFailure";
 
 
 // Lazy load large, non-critical pages
@@ -135,7 +136,11 @@ function Router() {
       <RecurringDonationSuccess />
     </Suspense>
   )} />
-
+  <Route path="/recurring-donation-failure" component={() => (
+    <Suspense fallback={<div>Loading Success...</div>}>
+      <RecurringDonationFailure />
+    </Suspense>
+  )} />
   {/* ✅ Final catch-all route for unmatched paths */}
   <Route>
     {() => (

@@ -102,17 +102,22 @@ export default function RecurringDonation() {
             .then((res) => res.json())
             .then((data) => {
               if (data.success) {
+                // Payment verified successfully
                 window.location.href = "/recurring-donation-success";
               } else {
-                setError("Payment verification failed!");
+                // Verification failed
+                window.location.href = "/recurring-donation-failure";
               }
             })
-            .catch(() => setError("Payment verification failed!"));
+            .catch(() => {
+              // Network or unexpected error
+              window.location.href = "/recurring-donation-failure";
+            });
         },
       };
-
+      
       const rzp = new (window as any).Razorpay(options);
-      rzp.open();
+      rzp.open();      
     } catch (err: any) {
       setError(err.message || "Something went wrong.");
     }
