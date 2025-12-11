@@ -37,6 +37,7 @@ const Contact = lazy(() => import("@/pages/Contact"));
 const Shipping = lazy(() => import("@/pages/shipping"));
 const RecurringDonation = lazy(() => import("@/pages/RecurringDonation"));
 const RecurringDonationSuccess = lazy(() => import("@/pages/RecurringDonationSuccess"));
+const Careers = lazy(() => import("@/pages/Careers"));
 function usePageTracking() {
   const [location] = useLocation();
   useEffect(() => {
@@ -47,6 +48,9 @@ function usePageTracking() {
 function getUser() {
   return JSON.parse(localStorage.getItem('user') || 'null');
 }
+
+import { AnnadanamPopup } from "@/components/AnnadanamPopup";
+import { HiringPopup } from "@/components/HiringPopup";
 
 function Router() {
   const [showCookieBanner, setShowCookieBanner] = useState(false);
@@ -69,87 +73,94 @@ function Router() {
   return (
     <div className="min-h-screen bg-spiritual-beige overflow-x-hidden">
       <Navbar />
-     <Switch>
-  <Route path="/" component={Home} />
-  <Route path="/annadanam" component={Annadanam} />
-  <Route path="/seva" component={Seva} />
-  <Route path="/seva/:id" component={SevaDetails} />
-  <Route path="/development" component={TempleDevelopment} />
-  <Route path="/guruji" component={Guruji} />
-  <Route path="/gallery" component={() => (
-    <Suspense fallback={<div>Loading Gallery...</div>}>
-      <Gallery />
-    </Suspense>
-  )} />
-  <Route path="/mantra" component={() => (
-    <Suspense fallback={<div>Loading Mantra...</div>}>
-      <Mantra />
-    </Suspense>
-  )} />
-  <Route path="/calendar" component={() => (
-    <Suspense fallback={<div>Loading Calendar...</div>}>
-      <Calendar />
-    </Suspense>
-  )} />
-  <Route path="/join-us" component={() => (
-    <Suspense fallback={<div>Loading Join Us...</div>}>
-      <JoinUs />
-    </Suspense>
-  )} />
-  <Route path="/terms" component={() => (
-    <Suspense fallback={<div>Loading Terms...</div>}>
-      <Terms />
-    </Suspense>
-  )} />
-  <Route path="/shipping" component={() => (
-    <Suspense fallback={<div>Loading Shipping Policy...</div>}>
-      <Shipping />
-    </Suspense>
-  )} />
-  <Route path="/privacy" component={() => (
-    <Suspense fallback={<div>Loading Privacy...</div>}>
-      <Privacy />
-    </Suspense>
-  )} />
-  <Route path="/refund" component={() => (
-    <Suspense fallback={<div>Loading Refund...</div>}>
-      <Refund />
-    </Suspense>
-  )} />
-  <Route path="/thank-you" component={() => (
-    <Suspense fallback={<div>Loading...</div>}>
-      <ThankYou />
-    </Suspense>
-  )} />
-  <Route path="/contact" component={() => (
-    <Suspense fallback={<div>Loading Contact...</div>}>
-      <Contact />
-    </Suspense>
-  )} />
-  <Route path="/recurring-donation" component={() => (
-    <Suspense fallback={<div>Loading Recurring Donation...</div>}>
-      <RecurringDonation />
-    </Suspense>
-  )} />
-  <Route path="/recurring-donation-success" component={() => (
-    <Suspense fallback={<div>Loading Success...</div>}>
-      <RecurringDonationSuccess />
-    </Suspense>
-  )} />
-  <Route path="/recurring-donation-failure" component={() => (
-    <Suspense fallback={<div>Loading Success...</div>}>
-      <RecurringDonationFailure />
-    </Suspense>
-  )} />
-  {/* ✅ Final catch-all route for unmatched paths */}
-  <Route>
-    {() => (
-      <Suspense fallback={<div>Loading Not Found...</div>}>
-        <NotFound />
-      </Suspense>
-    )}
-  </Route>
-</Switch>
+      <AnnadanamPopup />
+      <HiringPopup />
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/annadanam" component={Annadanam} />
+        <Route path="/seva" component={Seva} />
+        <Route path="/seva/:id" component={SevaDetails} />
+        <Route path="/development" component={TempleDevelopment} />
+        <Route path="/guruji" component={Guruji} />
+        <Route path="/gallery" component={() => (
+          <Suspense fallback={<div>Loading Gallery...</div>}>
+            <Gallery />
+          </Suspense>
+        )} />
+        <Route path="/mantra" component={() => (
+          <Suspense fallback={<div>Loading Mantra...</div>}>
+            <Mantra />
+          </Suspense>
+        )} />
+        <Route path="/calendar" component={() => (
+          <Suspense fallback={<div>Loading Calendar...</div>}>
+            <Calendar />
+          </Suspense>
+        )} />
+        <Route path="/join-us" component={() => (
+          <Suspense fallback={<div>Loading Join Us...</div>}>
+            <JoinUs />
+          </Suspense>
+        )} />
+        <Route path="/terms" component={() => (
+          <Suspense fallback={<div>Loading Terms...</div>}>
+            <Terms />
+          </Suspense>
+        )} />
+        <Route path="/shipping" component={() => (
+          <Suspense fallback={<div>Loading Shipping Policy...</div>}>
+            <Shipping />
+          </Suspense>
+        )} />
+        <Route path="/privacy" component={() => (
+          <Suspense fallback={<div>Loading Privacy...</div>}>
+            <Privacy />
+          </Suspense>
+        )} />
+        <Route path="/refund" component={() => (
+          <Suspense fallback={<div>Loading Refund...</div>}>
+            <Refund />
+          </Suspense>
+        )} />
+        <Route path="/thank-you" component={() => (
+          <Suspense fallback={<div>Loading...</div>}>
+            <ThankYou />
+          </Suspense>
+        )} />
+        <Route path="/contact" component={() => (
+          <Suspense fallback={<div>Loading Contact...</div>}>
+            <Contact />
+          </Suspense>
+        )} />
+        <Route path="/recurring-donation" component={() => (
+          <Suspense fallback={<div>Loading Recurring Donation...</div>}>
+            <RecurringDonation />
+          </Suspense>
+        )} />
+        <Route path="/recurring-donation-success" component={() => (
+          <Suspense fallback={<div>Loading Success...</div>}>
+            <RecurringDonationSuccess />
+          </Suspense>
+        )} />
+        <Route path="/recurring-donation-failure" component={() => (
+          <Suspense fallback={<div>Loading Success...</div>}>
+            <RecurringDonationFailure />
+          </Suspense>
+        )} />
+        <Route path="/careers" component={() => (
+          <Suspense fallback={<div>Loading Careers...</div>}>
+            <Careers />
+          </Suspense>
+        )} />
+        {/* ✅ Final catch-all route for unmatched paths */}
+        <Route>
+          {() => (
+            <Suspense fallback={<div>Loading Not Found...</div>}>
+              <NotFound />
+            </Suspense>
+          )}
+        </Route>
+      </Switch>
 
       <Footer />
       {/* Cookie Consent Banner */}

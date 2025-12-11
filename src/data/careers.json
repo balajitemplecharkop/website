@@ -1,0 +1,56 @@
+[
+    {
+        "id": "temple-priest-assistant",
+        "title": "Assistant Priest",
+        "department": "Rituals",
+        "type": "Full-time",
+        "location": "Charkop, Mumbai",
+        "description": "We are seeking a dedicated Assistant Priest to support our daily rituals, abhishekams, and festival ceremonies. The ideal candidate will have a strong background in Vedic traditions.",
+        "requirements": [
+            "Formal education in Vedic studies (Veda Pathashala)",
+            "Experience in performing daily pujas and alankaram",
+            "Fluency in Sanskrit and local languages",
+            "Sattvic lifestyle and adherence to temple customs"
+        ]
+    },
+    {
+        "id": "office-admin",
+        "title": "Office Administrator",
+        "department": "Administration",
+        "type": "Full-time",
+        "location": "Charkop, Mumbai",
+        "description": "Manage the temple office operations, devotee inquiries, donation receipts, and general coordination.",
+        "requirements": [
+            "Bachelor's degree in any field",
+            "Proficiency in computers (MS Office, Email)",
+            "Good communication skills in Hindi, Marathi, and English",
+            "Prior experience in NGO or Temple administration is a plus"
+        ]
+    },
+    {
+        "id": "prasadam-cook",
+        "title": "Prasadam Cook",
+        "department": "Kitchen",
+        "type": "Part-time",
+        "location": "Charkop, Mumbai",
+        "description": "Prepare hygienic and traditional prasadam for daily offerings and special events.",
+        "requirements": [
+            "Experience in cooking large quantities of vegetarian food",
+            "Knowledge of traditional sattvic cooking methods",
+            "Commitment to hygiene and cleanliness"
+        ]
+    },
+    {
+        "id": "volunteer-event-coordinator",
+        "title": "Event Coordinator (Volunteer)",
+        "department": "Events",
+        "type": "Volunteer",
+        "location": "Charkop, Mumbai",
+        "description": "Help organize and manage crowd control during major festivals like Brahmotsavam and holidays.",
+        "requirements": [
+            "Strong organizational and leadership skills",
+            "Ability to work with diverse teams",
+            "Devotion and willingness to serve"
+        ]
+    }
+]

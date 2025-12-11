@@ -12,6 +12,7 @@ export default function Footer() {
     { path: "/privacy", label: "Privacy Policy" },
     { path: "/refund", label: "Cancellation & Refund Policy" },
     { path: "/shipping", label: "Shipping & Exchange Policy" },
+    { path: "/careers", label: "Careers" },
     { path: "/contact", label: "Contact Us" },
   ];
 
@@ -27,7 +28,7 @@ export default function Footer() {
   return (
     <footer className="bg-deep-brown text-white relative overflow-hidden">
       {/* Optional: Subtle background gradient overlay for depth */}
-      <div className="absolute inset-0 pointer-events-none" style={{background: "radial-gradient(ellipse at bottom right, #eab30822 0%, transparent 70%)"}} />
+      <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at bottom right, #eab30822 0%, transparent 70%)" }} />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Quick Links */}
@@ -103,9 +104,9 @@ export default function Footer() {
               <span>Made with</span>
               <Heart className="h-4 w-4 text-deep-saffron" />
               <span>by</span>
-              <a 
-                href="https://github.com/vedantchalke36" 
-                target="_blank" 
+              <a
+                href="https://github.com/vedantchalke36"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-deep-saffron transition-spiritual font-medium"
               >

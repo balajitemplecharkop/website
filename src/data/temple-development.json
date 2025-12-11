@@ -1,40 +1,18 @@
 {
-  "totalRaised": 650000,
+  "totalRaised": 500000,
   "totalTarget": 19000000,
-  "estimatedCompletion": "2026-10-24",
+  "estimatedCompletion": "2030-12-31",
   "projects": [
     {
-      "id": "flooring",
-      "title": "Main Sanctum Flooring",
-      "description": "Premium marble flooring installation for the main prayer hall.",
-      "progress": 0,
-      "raised": 0,
+      "id": "expansion",
+      "title": "Temple Premises & Facility Improvements",
+      "description": "Upgrading and expanding existing spaces including cooking hall, administrative areas, priest rooms, sanitation facilities, and devotee amenities to support increasing footfall and enhance the devotional experience.",
+      "progress": 20,
+      "raised": 100000,
       "target": 500000,
-      "status": "0% Complete",
-      "statusColor": "bg-deep-saffron",
-      "contributeUrl": "https://rzp.io/rzp/EnrdJhB"
-    },
-    {
-      "id": "roof",
-      "title": "Roof Renovation",
-      "description": "Weather-resistant roofing to protect the temple structure.",
-      "progress": 0,
-      "raised": 0,
-      "target": 600000,
-      "status": "0% Complete",
-      "statusColor": "bg-deep-saffron",
-      "contributeUrl": "https://rzp.io/rzp/SP0slvt"
-    },
-    {
-      "id": "mandap",
-      "title": "Community Mandap",
-      "description": "Covered pavilion for large gatherings and festivals.",
-      "progress": 0,
-      "raised": 0,
-      "target": 800000,
-      "status": "Planning in Progress",
-      "statusColor": "bg-light-saffron text-deep-brown",
-      "contributeUrl": "https://rzp.io/rzp/6LlqsOL"
+      "status": "Initiated",
+      "statusColor": "bg-peacock-green text-white",
+      "contributeUrl": "https://rzp.io/rzp/TEMP-EXPANSION"
     }
   ]
 }
