@@ -1,17 +1,23 @@
 import { useState, useMemo, useEffect } from "react";
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import PoojaCard from "@/components/PoojaCard";
-import poojaItems from "@/data/pooja-items.json";
 import { Search, Filter } from "lucide-react";
 import { Helmet } from 'react-helmet-async';
 
 export default function Seva() {
+  const [poojaItems, setPoojaItems] = useState<any[]>([]);
   const [displayedItems, setDisplayedItems] = useState(8);
   const [search, setSearch] = useState("");
   const [sort, setSort] = useState("price-asc");
 
+  useEffect(() => {
+    fetch("/data/pooja-items.json")
+      .then((response) => response.json())
+      .then((data) => setPoojaItems(data));
+  }, []);
+
   const filteredAndSortedItems = useMemo(() => {
+    if (!poojaItems) return [];
     let items = poojaItems.filter((item) => {
       const q = search.toLowerCase();
       return (
@@ -25,7 +31,7 @@ export default function Seva() {
     else if (sort === "name-asc") items.sort((a, b) => a.name.localeCompare(b.name));
     else if (sort === "name-desc") items.sort((a, b) => b.name.localeCompare(a.name));
     return items;
-  }, [search, sort]);
+  }, [search, sort, poojaItems]);
 
   // Infinite scroll effect, optimized for mobile (no spinner, loads earlier)
   useEffect(() => {
@@ -227,14 +233,13 @@ export default function Seva() {
             <div className="bg-white/80 rounded-2xl shadow-spiritual p-4 md:p-8">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {filteredAndSortedItems.slice(0, displayedItems).map((pooja, idx) => (
-                  <motion.div
+                  <div
                     key={pooja.id}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: idx * 0.05 }}
+                    className="animate-fade-in-up"
+                    style={{ animationDelay: `${idx * 0.05}s` }}
                   >
                     <PoojaCard pooja={{ ...pooja, price: Number(pooja.price) }} />
-                  </motion.div>
+                  </div>
                 ))}
               </div>
 

@@ -163,3 +163,4 @@
     border-color: var(--peacock-green);
   }
 }
+.animate-fade-in-up { animation: fadeInUp 0.5s both; } @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
