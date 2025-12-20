@@ -8,6 +8,12 @@ export default defineConfig({
   plugins: [
     react(),
     runtimeErrorOverlay(),
+    visualizer({
+      filename: "dist/stats.html",
+      open: true,
+      gzipSize: true,
+      brotliSize: true,
+    }),
   ],
   resolve: {
     alias: {

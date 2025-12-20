@@ -2,19 +2,32 @@ import { useParams } from "wouter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from '@/components/ui/button';
-import poojaItems from "@/data/pooja-items.json";
-import { useMemo, useState } from "react";
-import testimonialsData from "@/data/seva-testimonials.json";
+import { useMemo, useState, useEffect } from "react";
 import { Helmet } from 'react-helmet-async';
-import rawSevaSeoData from "@/data/seva-seo.json";
-import sevaFaqDataRaw from "@/data/seva-faq.json";
 import FaqAccordion from "@/components/FaqAccordion";
-const sevaSeoData: Record<string, { seoDescription: string }> = rawSevaSeoData;
-const sevaFaqData: { [key: string]: { question: string; answer: string }[] } = sevaFaqDataRaw;
 
 export default function SevaDetails() {
   const { id } = useParams();
-  const pooja = poojaItems.find(item => item.id === id);
+  const [poojaItems, setPoojaItems] = useState<any[]>([]);
+  const [testimonialsData, setTestimonialsData] = useState<any[]>([]);
+  const [sevaSeoData, setSevaSeoData] = useState<Record<string, { seoDescription: string }>>({});
+  const [sevaFaqData, setSevaFaqData] = useState<{ [key: string]: { question: string; answer: string }[] }>({});
+
+  useEffect(() => {
+    Promise.all([
+      fetch("/data/pooja-items.json").then((res) => res.json()),
+      fetch("/data/seva-testimonials.json").then((res) => res.json()),
+      fetch("/data/seva-seo.json").then((res) => res.json()),
+      fetch("/data/seva-faq.json").then((res) => res.json()),
+    ]).then(([poojaData, testimonialsData, seoData, faqData]) => {
+      setPoojaItems(poojaData);
+      setTestimonialsData(testimonialsData);
+      setSevaSeoData(seoData);
+      setSevaFaqData(faqData);
+    });
+  }, []);
+
+  const pooja = useMemo(() => poojaItems.find(item => item.id === id), [id, poojaItems]);
 
   const [faqOpen, setFaqOpen] = useState(true);
   const [openFaqIndexes, setOpenFaqIndexes] = useState<{ [key: number]: boolean }>({});

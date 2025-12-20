@@ -1,8 +1,5 @@
-import { useState } from "react";
-import annadanamFaqDataRaw from "@/data/annadanam-faq.json";
-const annadanamFaqData: { question: string; answer: string }[] = annadanamFaqDataRaw as any[];
+import { useState, useEffect } from "react";
 import { annadanamGoal } from "@/data/annadanamGoal";
-import sevaTestimonials from "@/data/seva-testimonials.json";
 import { Helmet } from 'react-helmet-async';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
@@ -10,6 +7,18 @@ import FaqAccordion from "@/components/FaqAccordion";
 
 export default function Annadanam() {
   const [openFaqIndexes, setOpenFaqIndexes] = useState<{ [key: number]: boolean }>({});
+  const [annadanamFaqData, setAnnadanamFaqData] = useState<{ question: string; answer: string }[]>([]);
+  const [sevaTestimonials, setSevaTestimonials] = useState<any[]>([]);
+
+  useEffect(() => {
+    fetch("/data/annadanam-faq.json")
+      .then((response) => response.json())
+      .then((data) => setAnnadanamFaqData(data));
+    fetch("/data/seva-testimonials.json")
+      .then((response) => response.json())
+      .then((data) => setSevaTestimonials(data));
+  }, []);
+
   // Placeholder images for the carousel
   const galleryImages = [
     {
