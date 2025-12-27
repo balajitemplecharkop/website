@@ -54,22 +54,22 @@ function getUser() {
 // import { HiringPopup } from "@/components/HiringPopup";
 
 function Router() {
-  const [showCookieBanner, setShowCookieBanner] = useState(false);
+  // const [showCookieBanner, setShowCookieBanner] = useState(false);
   const [location] = useLocation();
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [location]);
 
-  useEffect(() => {
-    const consent = localStorage.getItem("cookieConsent");
-    if (!consent) setShowCookieBanner(true);
-  }, []);
+  // useEffect(() => {
+  //   const consent = localStorage.getItem("cookieConsent");
+  //   if (!consent) setShowCookieBanner(true);
+  // }, []);
 
-  const handleCookieConsent = (choice: "all" | "minimal") => {
-    localStorage.setItem("cookieConsent", choice);
-    setShowCookieBanner(false);
-  };
+  // const handleCookieConsent = (choice: "all" | "minimal") => {
+  //   localStorage.setItem("cookieConsent", choice);
+  //   setShowCookieBanner(false);
+  // };
 
   return (
     <div className="min-h-screen bg-spiritual-beige overflow-x-hidden">
@@ -170,7 +170,7 @@ function Router() {
 
       <Footer />
       {/* Cookie Consent Banner */}
-      {showCookieBanner && (
+      {/* {showCookieBanner && (
         <div className="fixed bottom-6 right-6 z-50 bg-white border border-light-saffron shadow-2xl rounded-2xl p-5 flex flex-col min-w-[280px] max-w-sm w-full animate-fade-in-up">
           <div className="flex justify-between items-start mb-2">
             <div className="text-deep-brown text-sm text-left pr-6">
@@ -200,7 +200,7 @@ function Router() {
             </button>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
