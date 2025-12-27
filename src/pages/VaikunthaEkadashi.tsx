@@ -11,7 +11,7 @@ export default function VaikunthaEkadashi() {
   const [showConfetti, setShowConfetti] = useState(true);
 
   // Event date and timings
-  const eventDate = "3rd December 2025";
+  const eventDate = "30th December 2025";
   const eventTimings = [
     { event: "Vaikuntha Dwara Darshan", time: "05:00 AM - 09:00 PM" },
     { event: "Palki Seva", time: "08:00 PM - 09:00 PM" },
