@@ -50,8 +50,8 @@ function getUser() {
   return JSON.parse(localStorage.getItem('user') || 'null');
 }
 
-import { AnnadanamPopup } from "@/components/AnnadanamPopup";
-import { HiringPopup } from "@/components/HiringPopup";
+// import { AnnadanamPopup } from "@/components/AnnadanamPopup";
+// import { HiringPopup } from "@/components/HiringPopup";
 
 function Router() {
   const [showCookieBanner, setShowCookieBanner] = useState(false);
@@ -74,8 +74,8 @@ function Router() {
   return (
     <div className="min-h-screen bg-spiritual-beige overflow-x-hidden">
       <Navbar />
-      <AnnadanamPopup />
-      <HiringPopup />
+      {/* <AnnadanamPopup /> */}
+      {/* <HiringPopup /> */}
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/annadanam" component={Annadanam} />
