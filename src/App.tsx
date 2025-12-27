@@ -38,6 +38,7 @@ const Shipping = lazy(() => import("@/pages/shipping"));
 const RecurringDonation = lazy(() => import("@/pages/RecurringDonation"));
 const RecurringDonationSuccess = lazy(() => import("@/pages/RecurringDonationSuccess"));
 const Careers = lazy(() => import("@/pages/Careers"));
+const VaikunthaEkadashi = lazy(() => import("@/pages/VaikunthaEkadashi"));
 function usePageTracking() {
   const [location] = useLocation();
   useEffect(() => {
@@ -150,6 +151,11 @@ function Router() {
         <Route path="/careers" component={() => (
           <Suspense fallback={<div>Loading Careers...</div>}>
             <Careers />
+          </Suspense>
+        )} />
+        <Route path="/vaikuntha-ekadashi" component={() => (
+          <Suspense fallback={<div>Loading...</div>}>
+            <VaikunthaEkadashi />
           </Suspense>
         )} />
         {/* ✅ Final catch-all route for unmatched paths */}
